@@ -684,18 +684,22 @@ export default function HomePage() {
                   <div className="tt-section-inner">
                     <div className="brand-scroller" aria-label="Brands we've worked with">
                       <div className="brand-track">
-                        {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logoSrc, index) => (
-                          <div className="brand" key={`${logoSrc}-${index}`} aria-hidden={index >= BRAND_LOGOS.length ? "true" : undefined}>
-                            <img
-                              loading="lazy"
-                              fetchPriority="auto"
-                              decoding="async"
-                              src={logoSrc}
-                              alt={brandAltFromPath(logoSrc)}
-                              draggable="false"
-                            />
-                          </div>
-                        ))}
+                        {[...BRAND_LOGOS, ...BRAND_LOGOS].map((logoSrc, index) => {
+                          const isDuplicate = index >= BRAND_LOGOS.length;
+                          const primaryIndex = index % BRAND_LOGOS.length;
+                          return (
+                            <div className="brand" key={`${logoSrc}-${index}`} aria-hidden={isDuplicate ? "true" : undefined}>
+                              <img
+                                loading={isDuplicate ? "lazy" : (primaryIndex < 10 ? "eager" : "lazy")}
+                                fetchPriority={isDuplicate ? "auto" : (primaryIndex < 4 ? "high" : "auto")}
+                                decoding="async"
+                                src={logoSrc}
+                                alt={brandAltFromPath(logoSrc)}
+                                draggable="false"
+                              />
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>

@@ -10098,6 +10098,7 @@ body:not(.tt-boxed) .tt-footer-inner,
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
     -webkit-mask-image: none;
             mask-image: none;
     scroll-snap-type: x proximity;
@@ -10123,10 +10124,16 @@ body:not(.tt-boxed) .tt-footer-inner,
     animation: none !important;
     transform: none !important;
     padding-right: 4vw;
+    will-change: auto;
   }
 
   .brand{
     scroll-snap-align: start;
+  }
+
+  /* Duplicates are needed for desktop loop only; hide them on mobile for stability. */
+  .brand[aria-hidden="true"]{
+    display: none;
   }
 }
 
