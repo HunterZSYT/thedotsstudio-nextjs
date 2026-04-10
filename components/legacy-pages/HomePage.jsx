@@ -126,6 +126,7 @@ export default function HomePage() {
                           {/* Begin menu list */}        <ul className="tt-ol-menu-list">
                             {/* Home (no dropdown) */}
                             <li><a href="/">Home</a></li>
+                            <li><a href="/#services">Services</a></li>
                             {/* Portfolio (minimal dropdown) */}
                             <li className="tt-ol-submenu-wrap">
                               <div className="tt-ol-submenu-trigger">
@@ -443,7 +444,7 @@ export default function HomePage() {
       						============================ 
       						* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc. Note that each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
       						*/}
-                <div className="tt-section padding-bottom-xlg-150 padding-left-sm-3-p padding-right-sm-3-p">
+                <div id="services" className="tt-section padding-bottom-xlg-150 padding-left-sm-3-p padding-right-sm-3-p">
                   <div className="tt-section-inner tt-wrap max-width-1100">
                     {/* Begin tt-Heading 
       								====================== 
@@ -849,3 +850,4 @@ export default function HomePage() {
     </>
   );
 }
+

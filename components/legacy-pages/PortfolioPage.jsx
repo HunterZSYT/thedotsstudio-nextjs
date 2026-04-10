@@ -75,6 +75,7 @@ export default function PortfolioPage() {
                           <ul className="tt-ol-menu-list">
                             {/* Home (no dropdown) */}
                             <li><a href="/">Home</a></li>
+                            <li><a href="/#services">Services</a></li>
                             {/* Portfolio (minimal dropdown) */}
                             <li className="tt-ol-submenu-wrap">
                               <div className="tt-ol-submenu-trigger">
@@ -1622,3 +1623,4 @@ export default function PortfolioPage() {
     </>
   );
 }
+
