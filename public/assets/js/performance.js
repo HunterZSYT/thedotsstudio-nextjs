@@ -51,17 +51,13 @@
     },
     {
       root: null,
-      rootMargin: "300px 0px",
-      threshold: 0.15
+      rootMargin: "120px 0px",
+      threshold: 0.25
     }
   );
 
   videos.forEach(function (video) {
-    if (video.dataset.autoplay === "true") {
-      video.setAttribute("preload", "metadata");
-    } else {
-      video.setAttribute("preload", "none");
-    }
+    video.setAttribute("preload", "none");
     if (!video.hasAttribute("playsinline")) {
       video.setAttribute("playsinline", "");
     }

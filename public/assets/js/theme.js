@@ -210,11 +210,8 @@
 
 		// Force page a reload when browser "Back" button click.
 		// =====================================================
-		window.onpageshow = function (event) {
-			if (event.persisted) {
-				window.location.reload();
-			}
-		}
+		// Disabled: this can cause reload loops/crashes on mobile browsers (especially iOS).
+		window.onpageshow = null;
 
 
 		// On link click
