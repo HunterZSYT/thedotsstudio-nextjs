@@ -10024,6 +10024,7 @@ body:not(.tt-boxed) .tt-footer-inner,
   --speed: 50s;     /* full cycle time (bigger = slower) */
   position: relative;
   overflow: hidden;
+  line-height: 0;
   /* soft fade edges (safe on webkit + others) */
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), #000 8%, #000 92%, rgba(0,0,0,0));
           mask-image: linear-gradient(to right, rgba(0,0,0,0), #000 8%, #000 92%, rgba(0,0,0,0));
@@ -10038,7 +10039,7 @@ body:not(.tt-boxed) .tt-footer-inner,
   animation: brand-marquee var(--speed) linear infinite;
   will-change: transform;
   backface-visibility: hidden;
-  transform: translateZ(0);
+  transform: translate3d(0,0,0);
 }
 
 /* Always run the marquee (wins over Reduce Motion & template overrides) */
@@ -10054,14 +10055,20 @@ body:not(.tt-boxed) .tt-footer-inner,
 }
 
 /* Items */
-.brand{ flex: 0 0 auto; }               /* prevent flex squeezing */
+.brand{
+  flex: 0 0 auto;                         /* prevent flex squeezing */
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
 .brand img{
   height: 90px;
   width: auto;
   display: block;
   flex: 0 0 auto;
+  object-fit: contain;
+  -webkit-user-drag: none;
 }
-.brand { flex: 0 0 auto; }	
 .brand:hover img{ filter: grayscale(0) opacity(1); }
 
 /* Dark theme compatibility (tweak as needed) */

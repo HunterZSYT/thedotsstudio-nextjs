@@ -102,13 +102,30 @@
 	// =================
 
 	if ($("body").hasClass("tt-transition")) {
+		var minPreloaderVisibleMs = 2200;
+		var hideTriggered = false;
+
+		function triggerHideWithMinVisibleTime() {
+			if (hideTriggered) return;
+			hideTriggered = true;
+
+			// Count from navigation start so all pages get a consistent preloader window.
+			var elapsed = Math.floor(window.performance.now ? window.performance.now() : 0);
+			var delay = Math.max(0, minPreloaderVisibleMs - elapsed);
+
+			setTimeout(function() {
+				HideLoad(); // call out animations.
+			}, delay);
+		}
 
 		// Wait until the whole page is loaded.
-		$(window).on("load", function () {
-			setTimeout(function(){
-				HideLoad(); // call out animations.
-			}, 0);
-		});
+		if (document.readyState === "complete") {
+			triggerHideWithMinVisibleTime();
+		} else {
+			$(window).on("load", function () {
+				triggerHideWithMinVisibleTime();
+			});
+		}
 
 		// Transitions In (when "ptr-overlay" slides in).
 		// =================
@@ -125,8 +142,9 @@
 		// ================
 		function HideLoad() {
 			var tl_transitOut = gsap.timeline();
-				 tl_transitOut.to(".ptr-preloader", { duration: 1, autoAlpha: 0, ease: Expo.easeInOut });
-				 tl_transitOut.to(".ptr-overlay", { duration: 1, scaleY: 0, transformOrigin: "center top", ease: Expo.easeInOut }, 0.3);
+				 tl_transitOut.to(".ptr-prel-image", { duration: 1.05, y: -26, scale: 1.04, autoAlpha: 0, ease: Expo.easeInOut }, 0);
+				 tl_transitOut.to(".ptr-preloader", { duration: 1.25, y: -8, autoAlpha: 0, ease: Expo.easeInOut }, 0.05);
+				 tl_transitOut.to(".ptr-overlay", { duration: 1.35, scaleY: 0, transformOrigin: "center top", ease: Expo.easeInOut }, 0.32);
 
 				 // tt-Header appear
 				 tl_transitOut.from("#tt-header", { duration: 1, y: 20, autoAlpha: 0, ease: Expo.easeInOut, clearProps:"all" }, 0.6);

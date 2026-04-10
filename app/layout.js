@@ -1,10 +1,11 @@
-import Script from "next/script";
 import "./globals.css";
+import ForcePageTransitionFallback from "../components/ForcePageTransitionFallback";
+import LegacyVendorScripts from "../components/LegacyVendorScripts";
+import DecorativeMediaSanitizer from "../components/DecorativeMediaSanitizer";
+import PortfolioMediaOverlay from "../components/PortfolioMediaOverlay";
+import { rootMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Dots Studio",
-  description: "Dots Studio website powered by Next.js",
-};
+export const metadata = rootMetadata;
 
 export default function RootLayout({ children }) {
   return (
@@ -32,19 +33,10 @@ export default function RootLayout({ children }) {
       </head>
       <body id="body" className="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
         {children}
-        <Script src="/assets/vendor/jquery/jquery.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/gsap/gsap.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/gsap/ScrollToPlugin.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/gsap/ScrollTrigger.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/smooth-scrollbar.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/swiper/js/swiper-bundle.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/isotope/imagesloaded.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/isotope/isotope.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/isotope/packery-mode.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/lightgallery/js/lightgallery-all.min.js" strategy="afterInteractive" />
-        <Script src="/assets/vendor/jquery.mousewheel.min.js" strategy="afterInteractive" />
-        <Script src="/assets/js/performance.js?v=2" strategy="afterInteractive" />
-        <Script src="/assets/js/theme.js" strategy="afterInteractive" />
+        <LegacyVendorScripts />
+        <DecorativeMediaSanitizer />
+        <PortfolioMediaOverlay />
+        <ForcePageTransitionFallback />
       </body>
     </html>
   );

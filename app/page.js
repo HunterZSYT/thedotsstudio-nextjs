@@ -1,11 +1,13 @@
-import LegacyHtmlPage from "@/components/LegacyHtmlPage";
-import { getHomeLegacyPage } from "@/lib/legacy-pages";
+import HomePage from "@/components/legacy-pages/HomePage";
+import { buildPageMetadata } from "@/lib/seo";
 
-export const metadata = {
-  title: "Dots Studio - Creative Portfolio Showcase",
-};
+export const metadata = buildPageMetadata({
+  title: "Dots Studio - Powering Ideas, Connecting Dots",
+  description: "Creative design, digital marketing, website development, software solutions, and AI automation for ambitious brands. Powering Ideas, Connecting Dots.",
+  path: "/",
+  keywords: ["creative portfolio", "agency in bangladesh"],
+});
 
-export default function Home() {
-  const page = getHomeLegacyPage();
-  return <LegacyHtmlPage html={page?.bodyHtml || ""} />;
+export default function Page() {
+  return <HomePage />;
 }
