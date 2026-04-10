@@ -218,7 +218,7 @@
 		// ==============
 		$("a")
 			.not('[target="_blank"]') // omit from selection
-			.not('[href^="#"]') // omit from selection
+			.not('[href*="#"]') // omit from selection
 			.not('[href^="mailto"]') // omit from selection
 			.not('[href^="tel"]') // omit from selection
 			.not(".lg-trigger") // omit from selection
@@ -520,7 +520,7 @@
 			// On menu link click
 			$(".tt-main-menu a, .tt-logo a")
 			.not('[target="_blank"]') // omit from selection
-			.not('[href="#"]') // omit from selection
+			.not('[href*="#"]') // omit from selection
 			.not('[href^="mailto"]') // omit from selection
 			.not('[href^="tel"]') // omit from selection
 			.on('click', function() {
@@ -640,7 +640,7 @@
 			// On menu link click
 			$(".tt-overlay-menu a, .tt-logo a")
 			.not('[target="_blank"]') // omit from selection
-			.not('[href="#"]') // omit from selection
+			.not('[href*="#"]') // omit from selection
 			.not('[href^="mailto"]') // omit from selection
 			.not('[href^="tel"]') // omit from selection
 			.on('click', function() {
