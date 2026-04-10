@@ -143,7 +143,7 @@ export default function PortfolioPage() {
       							============================= */}
                   <div className="ph-image">
                     <div className="ph-image-inner">
-                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
                         <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
                       </video>
                     </div>
@@ -347,7 +347,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-1.jpg">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-1.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
@@ -448,7 +448,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline>
+                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-2.jpg">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-2.webm" type="video/webm" />	
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -549,7 +549,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-4.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-4.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -719,7 +719,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-5.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-5.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
@@ -820,7 +820,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline>
+                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-6.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-6.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -921,7 +921,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-7.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-7.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -1091,7 +1091,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-8.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-8.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
@@ -1192,7 +1192,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-9.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-9.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -1295,7 +1295,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline>
+                                      <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-10.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-10.webm" type="video/webm" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
@@ -1467,7 +1467,7 @@ export default function PortfolioPage() {
                                 <div className="pgi-image-holder cover-opacity-2">
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
-                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                                      <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-11.png">
                                         <source src="/assets/dots-portfolio-all/portfolio-vid-11.webm" type="video/webm" />
                                       </video>
                                     </figure>
@@ -1535,7 +1535,7 @@ export default function PortfolioPage() {
                         <div className="tt-pn-subtitle anim-fadeinup">Get in Touch</div>
                         {/* Use if destination page contains page header image */}
                         <div className="tt-pn-image">
-                          <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
+                          <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
                             <source src="/assets/dots-assets-vids/contact-vid.webm" type="video/webm" />
                           </video>
                         </div>
