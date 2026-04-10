@@ -3,6 +3,20 @@
 
   var videos = Array.prototype.slice.call(document.querySelectorAll("video"));
   if (!videos.length) return;
+  var visibilityMap = new Map();
+
+  var isConstrainedDevice = false;
+  try {
+    var coarsePointer = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+    var smallViewport = window.matchMedia && window.matchMedia("(max-width: 991px)").matches;
+    isConstrainedDevice = !!(coarsePointer || smallViewport);
+  } catch (e) {
+    isConstrainedDevice = false;
+  }
+
+  if (typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4) {
+    isConstrainedDevice = true;
+  }
 
   function ensureReady(video) {
     if (video.dataset.perfLoaded === "1") return;
@@ -33,8 +47,37 @@
     }
   }
 
+  function syncConstrainedPlayback() {
+    if (!isConstrainedDevice) return;
+
+    var activeVideo = null;
+    videos.some(function (video) {
+      if (video.dataset.autoplay !== "true") return false;
+      if (!visibilityMap.get(video)) return false;
+      activeVideo = video;
+      return true;
+    });
+
+    videos.forEach(function (video) {
+      if (video.dataset.autoplay !== "true") return;
+      if (video === activeVideo) {
+        playIfNeeded(video);
+      } else {
+        pauseIfNeeded(video);
+      }
+    });
+  }
+
   if (!("IntersectionObserver" in window)) {
-    videos.forEach(playIfNeeded);
+    if (isConstrainedDevice) {
+      videos.some(function (video) {
+        if (video.dataset.autoplay !== "true") return false;
+        playIfNeeded(video);
+        return true;
+      });
+    } else {
+      videos.forEach(playIfNeeded);
+    }
     return;
   }
 
@@ -42,11 +85,18 @@
     function (entries) {
       entries.forEach(function (entry) {
         var video = entry.target;
-        if (entry.isIntersecting) {
-          playIfNeeded(video);
-        } else {
-          pauseIfNeeded(video);
-        }
+        visibilityMap.set(video, !!entry.isIntersecting);
+      });
+
+      if (isConstrainedDevice) {
+        syncConstrainedPlayback();
+        return;
+      }
+
+      entries.forEach(function (entry) {
+        var video = entry.target;
+        if (entry.isIntersecting) playIfNeeded(video);
+        else pauseIfNeeded(video);
       });
     },
     {
@@ -61,6 +111,12 @@
     if (!video.hasAttribute("playsinline")) {
       video.setAttribute("playsinline", "");
     }
+    visibilityMap.set(video, false);
     observer.observe(video);
+  });
+
+  document.addEventListener("visibilitychange", function () {
+    if (document.visibilityState !== "hidden") return;
+    videos.forEach(pauseIfNeeded);
   });
 })();
