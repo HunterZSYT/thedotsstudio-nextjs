@@ -8,29 +8,6 @@ export default function DecorativeMediaSanitizer() {
     const mobileQuery = "(max-width: 991px), (pointer: coarse)";
     const isMobileDevice = window.matchMedia?.(mobileQuery)?.matches ?? false;
 
-    const VIDEO_POSTER_MAP = [
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-1\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-1.jpg"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-2\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-2.jpg"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-4\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-4.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-5\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-5.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-6\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-6.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-7\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-7.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-8\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-8.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-9\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-9.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-10\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-10.png"],
-      [/\/assets\/dots-portfolio-all\/portfolio-vid-11\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-11.png"],
-      [/\/assets\/dots-services-vids\/creative-content\/creative-content-vid-1\.webm$/i, "/assets/dots-services-img/creative-content/creative-content-img-1.png"],
-      [/\/assets\/dots-services-vids\/creative-content\/creative-content-vid-2\.webm$/i, "/assets/dots-services-img/creative-content/creative-content-img-2.png"],
-      [/\/assets\/dots-services-vids\/creative-design\/creative-design-vid-1\.webm$/i, "/assets/dots-services-img/creative-design/creative-design-1.jpg"],
-      [/\/assets\/dots-services-vids\/creative-design\/creative-design-vid-2\.webm$/i, "/assets/dots-services-img/creative-design/Creative-Design2.jpg"],
-      [/\/assets\/dots-services-vids\/digital-marketing\/digi-marketing-vid-1\.webm$/i, "/assets/dots-services-img/digital-marketing/digi-market-1.png"],
-      [/\/assets\/dots-services-vids\/digital-marketing\/digi-marketing-vid-2\.webm$/i, "/assets/dots-services-img/digital-marketing/digi-market-2.png"],
-      [/\/assets\/dots-services-vids\/software-development\/software-development-vid-1\.webm$/i, "/assets/dots-services-img/software-development/soft-dev-1.jpg"],
-      [/\/assets\/dots-services-vids\/software-development\/software-development-vid-2\.webm$/i, "/assets/dots-services-img/software-development/soft-dev-2.png"],
-      [/\/assets\/dots-services-vids\/website-development\/website-development-vid-1\.webm$/i, "/assets/dots-services-img/website-development/web-dev-1.png"],
-      [/\/assets\/dots-services-vids\/website-development\/website-development-vid-2\.webm$/i, "/assets/dots-services-img/website-development/web-dev-2.png"],
-    ];
-
     const getVideoSource = (video) => {
       const source = video.querySelector("source")?.getAttribute("src");
       return source || video.getAttribute("src") || "";
@@ -46,16 +23,17 @@ export default function DecorativeMediaSanitizer() {
 
     const resolvePoster = (video) => {
       const currentPoster = video.getAttribute("poster");
+      const src = getVideoSource(video);
+      const isPortfolioGridVideo = !!video.closest(".portfolio-grid-item");
+      const generatedPoster = src ? toGeneratedPosterPath(src) : "";
+
+      // On mobile, portfolio grid motion cards should use same-video thumbnail frames.
+      if (isMobileDevice && isPortfolioGridVideo && generatedPoster) return generatedPoster;
+
       if (currentPoster) return currentPoster;
 
-      const src = getVideoSource(video);
       if (src) {
-        const generatedPoster = toGeneratedPosterPath(src);
         if (generatedPoster) return generatedPoster;
-
-        for (const [pattern, poster] of VIDEO_POSTER_MAP) {
-          if (pattern.test(src)) return poster;
-        }
       }
 
       return "/assets/img/web-video-poster.png";
