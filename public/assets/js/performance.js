@@ -19,10 +19,58 @@
     isConstrainedDevice = true;
   }
 
+  function resolvePosterFromSource(sourceSrc) {
+    if (!sourceSrc) return "";
+
+    if (sourceSrc.indexOf("/assets/dots-assets-vids/portfolio-vid.webm") !== -1) {
+      return "/assets/img/web-video-poster.png";
+    }
+    if (sourceSrc.indexOf("/assets/dots-assets-vids/contact-vid.webm") !== -1) {
+      return "/assets/img/web-video-poster.png";
+    }
+
+    var match = sourceSrc.match(/portfolio-vid-(\d+)\.webm/i);
+    if (!match) return "";
+    var id = parseInt(match[1], 10);
+
+    var portfolioPosterExt = {
+      1: "jpg",
+      2: "jpg",
+      4: "png",
+      5: "png",
+      6: "png",
+      7: "png",
+      8: "png",
+      9: "png",
+      10: "png",
+      11: "png"
+    };
+
+    if (!portfolioPosterExt[id]) return "";
+    return "/assets/dots-portfolio-all/portfolio-pic-" + id + "." + portfolioPosterExt[id];
+  }
+
+  function applyPoster(video) {
+    if (!video || video.getAttribute("poster")) return;
+    var sourceNode = video.querySelector("source");
+    var sourceSrc = "";
+    if (sourceNode && sourceNode.getAttribute) {
+      sourceSrc = sourceNode.getAttribute("src") || "";
+    }
+    if (!sourceSrc) {
+      sourceSrc = video.getAttribute("src") || "";
+    }
+    var posterSrc = resolvePosterFromSource(sourceSrc);
+    if (posterSrc) {
+      video.setAttribute("poster", posterSrc);
+    }
+  }
+
   // On mobile portfolio page, disable decorative autoplay entirely to avoid iOS tab reloads.
   if (isConstrainedDevice && isPortfolioPage) {
     videos.forEach(function (video) {
       if (!video.classList.contains("pgi-video")) return;
+      applyPoster(video);
       video.dataset.autoplay = "false";
       video.removeAttribute("data-autoplay");
       video.autoplay = false;
@@ -120,6 +168,7 @@
   );
 
   videos.forEach(function (video) {
+    applyPoster(video);
     video.setAttribute("preload", "none");
     if (!video.hasAttribute("playsinline")) {
       video.setAttribute("playsinline", "");
