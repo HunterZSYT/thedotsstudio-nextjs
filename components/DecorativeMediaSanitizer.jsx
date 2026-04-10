@@ -19,7 +19,6 @@ export default function DecorativeMediaSanitizer() {
       [/\/assets\/dots-portfolio-all\/portfolio-vid-9\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-9.png"],
       [/\/assets\/dots-portfolio-all\/portfolio-vid-10\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-10.png"],
       [/\/assets\/dots-portfolio-all\/portfolio-vid-11\.webm$/i, "/assets/dots-portfolio-all/portfolio-pic-11.png"],
-      [/\/assets\/dots-assets-vids\/home-video-1\.webm$/i, "/assets/dots-assets-img/home-img-1.png"],
       [/\/assets\/dots-services-vids\/creative-content\/creative-content-vid-1\.webm$/i, "/assets/dots-services-img/creative-content/creative-content-img-1.png"],
       [/\/assets\/dots-services-vids\/creative-content\/creative-content-vid-2\.webm$/i, "/assets/dots-services-img/creative-content/creative-content-img-2.png"],
       [/\/assets\/dots-services-vids\/creative-design\/creative-design-vid-1\.webm$/i, "/assets/dots-services-img/creative-design/creative-design-1.jpg"],
@@ -37,45 +36,29 @@ export default function DecorativeMediaSanitizer() {
       return source || video.getAttribute("src") || "";
     };
 
+    const toGeneratedPosterPath = (src) => {
+      if (!src) return "";
+      const normalized = src.replace(/^\/+/, "");
+      return `/assets/generated-posters/${normalized
+        .replace(/[\\/]/g, "__")
+        .replace(/\.(webm|mp4|mov|m4v)$/i, ".jpg")}`;
+    };
+
     const resolvePoster = (video) => {
       const currentPoster = video.getAttribute("poster");
       if (currentPoster) return currentPoster;
 
       const src = getVideoSource(video);
       if (src) {
+        const generatedPoster = toGeneratedPosterPath(src);
+        if (generatedPoster) return generatedPoster;
+
         for (const [pattern, poster] of VIDEO_POSTER_MAP) {
           if (pattern.test(src)) return poster;
         }
       }
 
       return "/assets/img/web-video-poster.png";
-    };
-
-    const replaceVideoWithPosterImage = (video) => {
-      if (video.getAttribute("data-mobile-poster-replaced") === "1") return;
-
-      const poster = resolvePoster(video);
-      if (!poster) return;
-
-      const image = document.createElement("img");
-      image.src = poster;
-      image.alt = video.getAttribute("aria-label") || video.getAttribute("title") || "Decorative preview";
-      image.className = `${video.className} mobile-poster-image`;
-      image.setAttribute("data-video-poster", poster);
-      image.setAttribute("data-from-video-src", getVideoSource(video));
-      image.setAttribute("loading", "lazy");
-      image.setAttribute("decoding", "async");
-
-      const inlineStyle = video.getAttribute("style");
-      if (inlineStyle) image.setAttribute("style", inlineStyle);
-
-      const width = video.getAttribute("width");
-      const height = video.getAttribute("height");
-      if (width) image.setAttribute("width", width);
-      if (height) image.setAttribute("height", height);
-
-      video.setAttribute("data-mobile-poster-replaced", "1");
-      video.replaceWith(image);
     };
 
     const sanitizeVideo = (video) => {
@@ -101,10 +84,11 @@ export default function DecorativeMediaSanitizer() {
       video.setAttribute("controlsList", "nodownload noplaybackrate noremoteplayback");
 
       if (isMobileDevice) {
+        const mobileSrc = getVideoSource(video);
+        if (mobileSrc) video.setAttribute("data-mobile-src", mobileSrc);
         video.removeAttribute("autoplay");
         video.removeAttribute("data-autoplay");
         video.pause();
-        replaceVideoWithPosterImage(video);
       }
     };
 

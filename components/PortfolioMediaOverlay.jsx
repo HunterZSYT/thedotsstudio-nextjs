@@ -12,7 +12,7 @@ function findMediaFromItem(item) {
   const video = item.querySelector("video.pgi-video");
   if (video) {
     const source = video.querySelector("source")?.getAttribute("src");
-    const src = source || video.getAttribute("src");
+    const src = source || video.getAttribute("src") || video.getAttribute("data-mobile-src");
     if (src) {
       return {
         type: "video",
@@ -143,9 +143,6 @@ export default function PortfolioMediaOverlay() {
   }, [activeMedia]);
 
   if (!activeMedia) return null;
-  const isMobileDevice = typeof window !== "undefined" && (window.matchMedia?.("(max-width: 991px), (pointer: coarse)")?.matches ?? false);
-  const shouldRenderStaticPreview = isMobileDevice && activeMedia.type === "video";
-  const previewImage = activeMedia.poster || "/assets/img/web-video-poster.png";
 
   return (
     <div
@@ -160,7 +157,7 @@ export default function PortfolioMediaOverlay() {
           ×
         </button>
         <div className="portfolio-overlay-title">{activeMedia.title}</div>
-        {activeMedia.type === "video" && !shouldRenderStaticPreview ? (
+        {activeMedia.type === "video" ? (
           <video
             src={activeMedia.src}
             className="portfolio-overlay-video"
@@ -172,9 +169,10 @@ export default function PortfolioMediaOverlay() {
             controls={false}
             disablePictureInPicture
             controlsList="nodownload noplaybackrate noremoteplayback"
+            poster={activeMedia.poster}
           />
         ) : (
-          <img src={shouldRenderStaticPreview ? previewImage : activeMedia.src} alt={activeMedia.title} className="portfolio-overlay-image" />
+          <img src={activeMedia.src} alt={activeMedia.title} className="portfolio-overlay-image" />
         )}
       </div>
     </div>
