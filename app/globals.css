@@ -203,3 +203,28 @@ video.pgi-video,
     max-height: calc(100vh - 90px);
   }
 }
+
+/* Portfolio mobile stability mode: avoids expensive Isotope absolute reflow on iOS. */
+@media (max-width: 991px) {
+  body.portfolio-lite-mode .isotope-items-wrap {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    height: auto !important;
+  }
+
+  body.portfolio-lite-mode .isotope-item {
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  body.portfolio-lite-mode .ttgr-cat-trigger-wrap,
+  body.portfolio-lite-mode .ttgr-cat-nav {
+    display: none !important;
+  }
+}

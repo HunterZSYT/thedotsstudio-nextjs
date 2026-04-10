@@ -4,6 +4,7 @@
   var videos = Array.prototype.slice.call(document.querySelectorAll("video"));
   if (!videos.length) return;
   var visibilityMap = new Map();
+  var isPortfolioPage = /^\/portfolio(?:\/|$)/.test(window.location.pathname || "");
 
   var isConstrainedDevice = false;
   try {
@@ -16,6 +17,18 @@
 
   if (typeof navigator.deviceMemory === "number" && navigator.deviceMemory <= 4) {
     isConstrainedDevice = true;
+  }
+
+  // On mobile portfolio page, disable decorative autoplay entirely to avoid iOS tab reloads.
+  if (isConstrainedDevice && isPortfolioPage) {
+    videos.forEach(function (video) {
+      if (!video.classList.contains("pgi-video")) return;
+      video.dataset.autoplay = "false";
+      video.removeAttribute("data-autoplay");
+      video.autoplay = false;
+      video.pause();
+      video.setAttribute("preload", "none");
+    });
   }
 
   function ensureReady(video) {
