@@ -45,8 +45,9 @@ export default function DecorativeMediaSanitizer() {
       if (managed.has(video)) return;
 
       managed.add(video);
+      const isPortfolioGridVideo = !!video.closest(".portfolio-grid-item");
       const poster = resolvePoster(video);
-      const shouldDisableInlineAutoplay = isMobileDevice && isPortfolioPage;
+      const shouldDisableInlineAutoplay = isMobileDevice && isPortfolioPage && isPortfolioGridVideo;
 
       video.autoplay = !shouldDisableInlineAutoplay;
       video.muted = true;
