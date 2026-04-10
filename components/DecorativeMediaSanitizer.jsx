@@ -7,6 +7,8 @@ export default function DecorativeMediaSanitizer() {
     const managed = new WeakSet();
     const mobileQuery = "(max-width: 991px), (pointer: coarse)";
     const isMobileDevice = window.matchMedia?.(mobileQuery)?.matches ?? false;
+    const path = (window.location?.pathname || "").replace(/\/+$/, "") || "/";
+    const isPortfolioPage = path === "/portfolio";
 
     const getVideoSource = (video) => {
       const source = video.querySelector("source")?.getAttribute("src");
@@ -44,8 +46,9 @@ export default function DecorativeMediaSanitizer() {
 
       managed.add(video);
       const poster = resolvePoster(video);
+      const shouldDisableInlineAutoplay = isMobileDevice && isPortfolioPage;
 
-      video.autoplay = !isMobileDevice;
+      video.autoplay = !shouldDisableInlineAutoplay;
       video.muted = true;
       video.defaultMuted = true;
       video.loop = true;
@@ -61,12 +64,14 @@ export default function DecorativeMediaSanitizer() {
       video.setAttribute("disablePictureInPicture", "");
       video.setAttribute("controlsList", "nodownload noplaybackrate noremoteplayback");
 
-      if (isMobileDevice) {
+      if (shouldDisableInlineAutoplay) {
         const mobileSrc = getVideoSource(video);
         if (mobileSrc) video.setAttribute("data-mobile-src", mobileSrc);
         video.removeAttribute("autoplay");
         video.removeAttribute("data-autoplay");
         video.pause();
+      } else {
+        video.setAttribute("autoplay", "");
       }
     };
 
