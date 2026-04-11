@@ -2023,6 +2023,12 @@
 		if ($ttgCatTriggerWrap.hasClass("ttgr-cat-fixed")) {
 			$ttgCatTriggerWrap.appendTo("#body-inner");
 
+			// Mobile: keep filter trigger always visible and skip scroll-based hide/show.
+			if (isMobile) {
+				gsap.set($ttgCatTriggerWrap, { autoAlpha: 1, scale: 1, clearProps: "transform" });
+				return;
+			}
+
 			// Show/Hide trigger on page scroll
 			ScrollTrigger.create({
 				trigger: "#portfolio-grid",
