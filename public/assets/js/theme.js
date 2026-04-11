@@ -809,12 +809,10 @@
 			}
 
 			scroller.addEventListener("pointerdown", function() { setPaused(true); }, { passive: true });
-			scroller.addEventListener("pointerup", function() { setPaused(true, 1200); }, { passive: true });
-			scroller.addEventListener("pointercancel", function() { setPaused(true, 1200); }, { passive: true });
+			scroller.addEventListener("pointerup", function() { setPaused(true, 900); }, { passive: true });
+			scroller.addEventListener("pointercancel", function() { setPaused(true, 900); }, { passive: true });
 			scroller.addEventListener("touchstart", function() { setPaused(true); }, { passive: true });
-			scroller.addEventListener("touchend", function() { setPaused(true, 1200); }, { passive: true });
-			scroller.addEventListener("mouseenter", function() { setPaused(true); }, { passive: true });
-			scroller.addEventListener("mouseleave", function() { setPaused(true, 700); }, { passive: true });
+			scroller.addEventListener("touchend", function() { setPaused(true, 900); }, { passive: true });
 
 			document.addEventListener("visibilitychange", function() {
 				if (document.hidden) {

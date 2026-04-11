@@ -61,7 +61,6 @@ export default function DecorativeMediaSanitizer() {
       video.setAttribute("playsinline", "");
       video.setAttribute("webkit-playsinline", "");
       video.setAttribute("poster", poster);
-      video.setAttribute("preload", "none");
       video.setAttribute("disablePictureInPicture", "");
       video.setAttribute("controlsList", "nodownload noplaybackrate noremoteplayback");
 
@@ -70,9 +69,22 @@ export default function DecorativeMediaSanitizer() {
         if (mobileSrc) video.setAttribute("data-mobile-src", mobileSrc);
         video.removeAttribute("autoplay");
         video.removeAttribute("data-autoplay");
+        video.setAttribute("preload", "none");
         video.pause();
       } else {
         video.setAttribute("autoplay", "");
+        video.setAttribute("preload", "metadata");
+        const tryPlay = () => {
+          const playPromise = video.play();
+          if (playPromise && typeof playPromise.catch === "function") {
+            playPromise.catch(() => {});
+          }
+        };
+        if (video.readyState >= 2) {
+          tryPlay();
+        } else {
+          video.addEventListener("loadedmetadata", tryPlay, { once: true });
+        }
       }
     };
 
