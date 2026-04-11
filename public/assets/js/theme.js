@@ -846,6 +846,16 @@
 	}
 	initMobileBrandScrollerAutoplay();
 	$(window).on("load", initMobileBrandScrollerAutoplay);
+	if (window.matchMedia("(max-width: 991px)").matches) {
+		var tickerInitAttempts = 0;
+		var tickerInitInterval = setInterval(function() {
+			initMobileBrandScrollerAutoplay();
+			tickerInitAttempts += 1;
+			if (tickerInitAttempts >= 20) {
+				clearInterval(tickerInitInterval);
+			}
+		}, 500);
+	}
 
 
 
@@ -2061,28 +2071,27 @@
 			// Mobile: keep filter trigger always visible and skip scroll-based hide/show.
 			if (isMobile) {
 				gsap.set($ttgCatTriggerWrap, { autoAlpha: 1, scale: 1, clearProps: "transform" });
-				return;
-			}
+			} else {
+				// Show/Hide trigger on page scroll
+				ScrollTrigger.create({
+					trigger: "#portfolio-grid",
+					start: "top bottom",
+					end: "bottom 75%",
+					scrub: true,
+					markers: false,
 
-			// Show/Hide trigger on page scroll
-			ScrollTrigger.create({
-				trigger: "#portfolio-grid",
-				start: "top bottom",
-				end: "bottom 75%",
-				scrub: true,
-				markers: false,
+					onEnter: () => ttgCatShow(),
+					onLeave: () => ttgCatHide(),
+					onEnterBack: () => ttgCatShow(),
+					onLeaveBack: () => ttgCatHide(),
+				});
 
-				onEnter: () => ttgCatShow(),
-				onLeave: () => ttgCatHide(),
-				onEnterBack: () => ttgCatShow(),
-				onLeaveBack: () => ttgCatHide(),
-			});
-
-			function ttgCatShow() {
-				gsap.to($ttgCatTriggerWrap, { duration: 0.4, autoAlpha: 1, scale: 1, ease:Power2.easeOut });
-			}
-			function ttgCatHide() {
-				gsap.to($ttgCatTriggerWrap, { duration: 0.4, autoAlpha: 0, scale: 0.9, ease:Power2.easeOut });
+				function ttgCatShow() {
+					gsap.to($ttgCatTriggerWrap, { duration: 0.4, autoAlpha: 1, scale: 1, ease:Power2.easeOut });
+				}
+				function ttgCatHide() {
+					gsap.to($ttgCatTriggerWrap, { duration: 0.4, autoAlpha: 0, scale: 0.9, ease:Power2.easeOut });
+				}
 			}
 
 		} else {
