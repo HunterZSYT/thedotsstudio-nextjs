@@ -14,8 +14,8 @@ const SCRIPT_URLS = [
   "/assets/vendor/isotope/packery-mode.pkgd.min.js",
   "/assets/vendor/lightgallery/js/lightgallery-all.min.js",
   "/assets/vendor/jquery.mousewheel.min.js",
-  "/assets/js/performance.js?v=2",
-  "/assets/js/theme.js",
+  "/assets/js/performance.js?v=3",
+  "/assets/js/theme.js?v=2",
 ];
 
 let scriptsLoadPromise;

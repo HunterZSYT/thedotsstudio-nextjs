@@ -4,7 +4,15 @@
   var videos = Array.prototype.slice.call(document.querySelectorAll("video"));
   if (!videos.length) return;
   var visibilityMap = new Map();
-  var isPortfolioPage = /^\/portfolio(?:\/|$)/.test(window.location.pathname || "");
+  var webmSupported = (function () {
+    try {
+      var probe = document.createElement("video");
+      if (!probe || typeof probe.canPlayType !== "function") return true;
+      return !!probe.canPlayType("video/webm; codecs=vp8,vorbis");
+    } catch (e) {
+      return true;
+    }
+  })();
 
   var isConstrainedDevice = false;
   try {
@@ -22,14 +30,14 @@
   function resolvePosterFromSource(sourceSrc) {
     if (!sourceSrc) return "";
 
-    if (sourceSrc.indexOf("/assets/dots-assets-vids/portfolio-vid.webm") !== -1) {
+    if (/\/assets\/dots-assets-vids\/portfolio-vid\.(webm|mp4)/i.test(sourceSrc)) {
       return "/assets/img/web-video-poster.png";
     }
-    if (sourceSrc.indexOf("/assets/dots-assets-vids/contact-vid.webm") !== -1) {
+    if (/\/assets\/dots-assets-vids\/contact-vid\.(webm|mp4)/i.test(sourceSrc)) {
       return "/assets/img/web-video-poster.png";
     }
 
-    var match = sourceSrc.match(/portfolio-vid-(\d+)\.webm/i);
+    var match = sourceSrc.match(/portfolio-vid-(\d+)\.(webm|mp4)/i);
     if (!match) return "";
     var id = parseInt(match[1], 10);
 
@@ -64,19 +72,6 @@
     if (posterSrc) {
       video.setAttribute("poster", posterSrc);
     }
-  }
-
-  // On mobile portfolio page, disable decorative autoplay entirely to avoid iOS tab reloads.
-  if (isConstrainedDevice && isPortfolioPage) {
-    videos.forEach(function (video) {
-      if (!video.classList.contains("pgi-video")) return;
-      applyPoster(video);
-      video.dataset.autoplay = "false";
-      video.removeAttribute("data-autoplay");
-      video.autoplay = false;
-      video.pause();
-      video.setAttribute("preload", "none");
-    });
   }
 
   function ensureReady(video) {
@@ -168,6 +163,29 @@
   );
 
   videos.forEach(function (video) {
+    var sourceNode = video.querySelector("source");
+    var sourceSrc = sourceNode ? (sourceNode.getAttribute("src") || "") : (video.getAttribute("src") || "");
+    if (!webmSupported && /\.webm(?:\?.*)?$/i.test(sourceSrc)) {
+      var mp4Src = sourceSrc.replace(/\.webm(\?.*)?$/i, ".mp4$1");
+      if (sourceNode) {
+        sourceNode.setAttribute("src", mp4Src);
+        sourceNode.setAttribute("type", "video/mp4");
+      } else {
+        video.setAttribute("src", mp4Src);
+      }
+    }
+
+    video.controls = false;
+    video.removeAttribute("controls");
+    video.setAttribute("muted", "");
+    video.muted = true;
+    video.defaultMuted = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    if (!video.dataset.autoplay) {
+      video.dataset.autoplay = video.hasAttribute("autoplay") ? "true" : "false";
+    }
+
     applyPoster(video);
     video.setAttribute("preload", "none");
     if (!video.hasAttribute("playsinline")) {

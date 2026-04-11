@@ -1,4 +1,4 @@
-export default function PortfolioPage() {
+﻿export default function PortfolioPage() {
   return (
     <>
       <div>
@@ -145,7 +145,7 @@ export default function PortfolioPage() {
                   <div className="ph-image">
                     <div className="ph-image-inner">
                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
-                        <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                        <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                       </video>
                     </div>
                   </div>
@@ -349,7 +349,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-1.jpg">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-1.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-1.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
                                   </div> {/* /.pgi-image-inner */}
@@ -450,7 +450,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-2.jpg">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-2.webm" type="video/webm" />	
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-2.mp4" type="video/mp4" />	
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                   </div> {/* /.pgi-image-inner */}
@@ -551,7 +551,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-4.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-4.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-4.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                   </div> {/* /.pgi-image-inner */}
@@ -559,7 +559,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Dots Showreel – Web &amp; UI</h2>
+                                    <h2 className="pgi-title">Dots Showreel â€“ Web &amp; UI</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">Motion</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -721,7 +721,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-5.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-5.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-5.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
                                   </div> {/* /.pgi-image-inner */}
@@ -822,7 +822,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-6.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-6.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-6.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                   </div> {/* /.pgi-image-inner */}
@@ -830,7 +830,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Dots Law Firm – Landing Page</h2>
+                                    <h2 className="pgi-title">Dots Law Firm â€“ Landing Page</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">UI/UX</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -863,7 +863,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">VR Reality – Landing Page</h2>
+                                    <h2 className="pgi-title">VR Reality â€“ Landing Page</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">UI/UX</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -923,7 +923,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-7.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-7.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-7.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                   </div> {/* /.pgi-image-inner */}
@@ -931,7 +931,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Dots Travel – Landing Page</h2>
+                                    <h2 className="pgi-title">Dots Travel â€“ Landing Page</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">UI/UX</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -1033,7 +1033,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Manami Mart – Billboard Ad</h2>
+                                    <h2 className="pgi-title">Manami Mart â€“ Billboard Ad</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">Branding</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -1066,7 +1066,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Cocoa Luxe – Packaging</h2>
+                                    <h2 className="pgi-title">Cocoa Luxe â€“ Packaging</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">Branding</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -1093,7 +1093,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-8.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-8.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-8.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-video-wrap */}
                                   </div> {/* /.pgi-image-inner */}
@@ -1101,7 +1101,7 @@ export default function PortfolioPage() {
                                 {/* /.pgi-image-wrap */}
                                 <div className="pgi-caption">
                                   <div className="pgi-caption-inner">
-                                    <h2 className="pgi-title">Dots Healthcare – Landing Page</h2>
+                                    <h2 className="pgi-title">Dots Healthcare â€“ Landing Page</h2>
                                     <div className="pgi-categories-wrap">
                                       <div className="pgi-category">UI/UX</div>
                                       {/* <div class="pgi-category">Varia</div> */}
@@ -1194,7 +1194,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-9.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-9.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-9.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                     <div className="gradient-overlay" />
@@ -1297,7 +1297,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" playsInline poster="/assets/dots-portfolio-all/portfolio-pic-10.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-10.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-10.mp4" type="video/mp4" />
                                       </video>
                                     </figure> {/* /.pgi-image */}
                                   </div> {/* /.pgi-image-inner */}
@@ -1469,7 +1469,7 @@ export default function PortfolioPage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/dots-portfolio-all/portfolio-pic-11.png">
-                                        <source src="/assets/dots-portfolio-all/portfolio-vid-11.webm" type="video/webm" />
+                                        <source src="/assets/dots-portfolio-all/portfolio-vid-11.mp4" type="video/mp4" />
                                       </video>
                                     </figure>
                                     <div className="gradient-overlay" /> {/* /.pgi-video-wrap */}
@@ -1537,7 +1537,7 @@ export default function PortfolioPage() {
                         {/* Use if destination page contains page header image */}
                         <div className="tt-pn-image">
                           <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
-                            <source src="/assets/dots-assets-vids/contact-vid.webm" type="video/webm" />
+                            <source src="/assets/dots-assets-vids/contact-vid.mp4" type="video/mp4" />
                           </video>
                         </div>
                       </div>
@@ -1568,7 +1568,7 @@ export default function PortfolioPage() {
                     <div className="footer-col tt-align-center order-m-last">
                       <div className="footer-col-inner">
                         <div className="tt-copyright">
-                          © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
+                          Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
                         </div>
                       </div> {/* /.footer-col-inner */}
                     </div>
@@ -1623,4 +1623,5 @@ export default function PortfolioPage() {
     </>
   );
 }
+
 

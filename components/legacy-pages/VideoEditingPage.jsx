@@ -1,4 +1,4 @@
-export default function VideoEditingPage() {
+﻿export default function VideoEditingPage() {
   return (
     <>
       <div>
@@ -210,12 +210,12 @@ export default function VideoEditingPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">Digital marketing isn’t just about being online—it’s about being unforgettable. At DOTS, we design strategies that don’t just follow algorithms, they outsmart them. Every campaign we launch is built to amplify your brand’s voice, strengthen visibility, and create momentum that lasts.</p>
-                    <p className="text-gray">We craft meaningful engagement that feels human, not robotic. From social conversations to search visibility, every move we make is intentional—blending data with creativity. Your audience doesn’t just scroll past; they stop, connect, and convert. Every click has purpose, every impression has weight.</p>
-                    <p className="text-gray">Our goal is long-term brand growth, not short-term hype. From SEO and targeted ads to powerful content and storytelling campaigns, we ensure your brand stands out in the noise. At DOTS, we don’t chase trends—we set strategies that make your brand impossible to ignore.</p>
+                    <p className="text-gray">Digital marketing isnâ€™t just about being onlineâ€”itâ€™s about being unforgettable. At DOTS, we design strategies that donâ€™t just follow algorithms, they outsmart them. Every campaign we launch is built to amplify your brandâ€™s voice, strengthen visibility, and create momentum that lasts.</p>
+                    <p className="text-gray">We craft meaningful engagement that feels human, not robotic. From social conversations to search visibility, every move we make is intentionalâ€”blending data with creativity. Your audience doesnâ€™t just scroll past; they stop, connect, and convert. Every click has purpose, every impression has weight.</p>
+                    <p className="text-gray">Our goal is long-term brand growth, not short-term hype. From SEO and targeted ads to powerful content and storytelling campaigns, we ensure your brand stands out in the noise. At DOTS, we donâ€™t chase trendsâ€”we set strategies that make your brand impossible to ignore.</p>
                     <br />
                     <h3>Why Choose DOTS?</h3>
-                    <p className="text-gray">At DOTS, we don’t just run ads—we build influence. Every strategy starts with understanding your audience, your brand voice, and your business goals. The result? Campaigns that feel natural, authentic, and designed to convert without forcing trends.</p>
+                    <p className="text-gray">At DOTS, we donâ€™t just run adsâ€”we build influence. Every strategy starts with understanding your audience, your brand voice, and your business goals. The result? Campaigns that feel natural, authentic, and designed to convert without forcing trends.</p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -225,13 +225,13 @@ export default function VideoEditingPage() {
                     <div className="tt-image margin-bottom-40">
                       <figure className="pgi-video-wrap ttgr-height">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/vids/video-editing.webm" type="video/webm" />
+                          <source src="/assets/vids/video-editing.mp4" type="video/mp4" />
                         </video>
                       </figure>
                     </div> 
                     {/* End tt-image */}
-                    <p className="text-gray">Our focus is on balance: creativity with data, storytelling with strategy. We ensure that every campaign is engaging enough to capture attention today, but flexible enough to evolve with tomorrow’s platforms. From SEO to social media, every move is crafted to be relevant, impactful, and future-ready.</p>
-                    <p className="text-gray">Most importantly, we act as a growth partner—not just an agency. Our team stays involved at every step, making sure your brand keeps gaining visibility and trust as digital spaces shift. With DOTS, you don’t just get digital marketing—you get long-term strategies that keep your brand ahead, connected, and impossible to overlook.</p>
+                    <p className="text-gray">Our focus is on balance: creativity with data, storytelling with strategy. We ensure that every campaign is engaging enough to capture attention today, but flexible enough to evolve with tomorrowâ€™s platforms. From SEO to social media, every move is crafted to be relevant, impactful, and future-ready.</p>
+                    <p className="text-gray">Most importantly, we act as a growth partnerâ€”not just an agency. Our team stays involved at every step, making sure your brand keeps gaining visibility and trust as digital spaces shift. With DOTS, you donâ€™t just get digital marketingâ€”you get long-term strategies that keep your brand ahead, connected, and impossible to overlook.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -263,7 +263,7 @@ export default function VideoEditingPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -290,7 +290,7 @@ export default function VideoEditingPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -317,7 +317,7 @@ export default function VideoEditingPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-4.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-4.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                               </div> {/* /.pgi-image-inner */}
@@ -343,7 +343,7 @@ export default function VideoEditingPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-3.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/video-editing/video-editing-vid-3.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -382,7 +382,7 @@ export default function VideoEditingPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -413,7 +413,7 @@ export default function VideoEditingPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -468,4 +468,5 @@ export default function VideoEditingPage() {
     </>
   );
 }
+
 

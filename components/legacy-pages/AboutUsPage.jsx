@@ -1,4 +1,4 @@
-export default function AboutUsPage() {
+﻿export default function AboutUsPage() {
   return (
     <>
       <div>
@@ -821,7 +821,7 @@ export default function AboutUsPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/contact-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/contact-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -861,9 +861,9 @@ export default function AboutUsPage() {
                         <div className="swiper-slide font-alter">
                           <div className="tt-ts-item">
                             <div className="tt-ts-text">
-                              "Working with Dots Studio was a game-changer for us. Their team didn’t just deliver on time, they actually understood our brand and gave us designs that felt like us. Clients noticed the difference immediately."
+                              "Working with Dots Studio was a game-changer for us. Their team didnâ€™t just deliver on time, they actually understood our brand and gave us designs that felt like us. Clients noticed the difference immediately."
                             </div>
-                            <div className="tt-ts-subtext">— Rashed Khan, Business Owner</div>
+                            <div className="tt-ts-subtext">â€” Rashed Khan, Business Owner</div>
                           </div>
                         </div> 
                         {/* End swiper slide */}
@@ -872,9 +872,9 @@ export default function AboutUsPage() {
                         <div className="swiper-slide font-alter">
                           <div className="tt-ts-item">
                             <div className="tt-ts-text">
-                              "I’ve worked with other agencies before, but none matched the mix of creativity and reliability that Dots Studio brought. They’re fast, responsive, and the quality speaks for itself."
+                              "Iâ€™ve worked with other agencies before, but none matched the mix of creativity and reliability that Dots Studio brought. Theyâ€™re fast, responsive, and the quality speaks for itself."
                             </div>
-                            <div className="tt-ts-subtext">— Maria Hossain, Marketing Manager</div>
+                            <div className="tt-ts-subtext">â€” Maria Hossain, Marketing Manager</div>
                           </div>
                         </div>
                         {/* End swiper slide */}
@@ -885,7 +885,7 @@ export default function AboutUsPage() {
                             <div className="tt-ts-text">
                               "Honestly, I was worried about costs at first, but what I got was way more valuable than the price I paid. They gave me strategy, design, and guidance that I still use every day."
                             </div>
-                            <div className="tt-ts-subtext">— Tanvir Ahmed, Startup Founder</div>
+                            <div className="tt-ts-subtext">â€” Tanvir Ahmed, Startup Founder</div>
                           </div>
                         </div>
                         {/* End swiper slide */}
@@ -894,9 +894,9 @@ export default function AboutUsPage() {
                         <div className="swiper-slide font-alter">
                           <div className="tt-ts-item">
                             <div className="tt-ts-text">
-                              "From the very first meeting to the final delivery, the process was so smooth. Clear communication, regular updates, and zero last-minute stress. That’s rare to find these days."
+                              "From the very first meeting to the final delivery, the process was so smooth. Clear communication, regular updates, and zero last-minute stress. Thatâ€™s rare to find these days."
                             </div>
-                            <div className="tt-ts-subtext">— Anika Rahman, Brand Manager</div>
+                            <div className="tt-ts-subtext">â€” Anika Rahman, Brand Manager</div>
                           </div>
                         </div> 
                         {/* End swiper slide */}
@@ -905,9 +905,9 @@ export default function AboutUsPage() {
                         <div className="swiper-slide font-alter">
                           <div className="tt-ts-item">
                             <div className="tt-ts-text">
-                              "We didn’t just get a website—we got an entire identity upgrade. Engagement on our socials jumped, customers loved the new look, and sales improved within weeks. Highly recommend them!"
+                              "We didnâ€™t just get a websiteâ€”we got an entire identity upgrade. Engagement on our socials jumped, customers loved the new look, and sales improved within weeks. Highly recommend them!"
                             </div>
-                            <div className="tt-ts-subtext">— Zubair Chowdhury, E-Commerce Owner</div>
+                            <div className="tt-ts-subtext">â€” Zubair Chowdhury, E-Commerce Owner</div>
                           </div>
                         </div> 
                         {/* End swiper slide */}
@@ -978,7 +978,7 @@ export default function AboutUsPage() {
                 <div className="footer-col tt-align-center order-m-last">
                   <div className="footer-col-inner">
                     <div className="tt-copyright">
-                      © Copyright -
+                      Â© Copyright -
                       <a className="tt-link" href="https://www.facebook.com/dotslimited" rel="noopener" target="_blank">
                         Dots It and Software Limited
                       </a>
@@ -1061,3 +1061,4 @@ export default function AboutUsPage() {
     </>
   );
 }
+

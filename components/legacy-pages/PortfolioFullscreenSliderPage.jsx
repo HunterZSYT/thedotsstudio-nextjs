@@ -1,4 +1,4 @@
-export default function PortfolioFullscreenSliderPage() {
+﻿export default function PortfolioFullscreenSliderPage() {
   return (
     <>
       <div>
@@ -179,8 +179,8 @@ export default function PortfolioFullscreenSliderPage() {
                         {/* Use class "cover-opacity-*" to set an image overlay if needed. For example "cover-opacity-2". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". */}
                         <div className="tt-portfolio-slider-item cover-opacity-3" data-swiper-parallax="50%">
                           <video playsInline className="tt-bg-video" loop muted preload="none" poster="/assets/vids/fashion-week.jpg">
-                            <source src="/assets/vids/website.webm" type="video/webm" />
-                            <source src="/assets/vids/website.webm" type="video/webm" />
+                            <source src="/assets/vids/website.mp4" type="video/mp4" />
+                            <source src="/assets/vids/website.mp4" type="video/mp4" />
                           </video>
                         </div> {/* /.tt-portfolio-slider-item */}
                       </div> 
@@ -356,3 +356,4 @@ export default function PortfolioFullscreenSliderPage() {
     </>
   );
 }
+

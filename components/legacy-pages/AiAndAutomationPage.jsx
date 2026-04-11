@@ -1,4 +1,4 @@
-export default function AiAndAutomationPage() {
+﻿export default function AiAndAutomationPage() {
   return (
     <>
       <div>
@@ -210,12 +210,12 @@ export default function AiAndAutomationPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">AI and automation aren’t just buzzwords—they’re the backbone of smarter businesses. At DOTS, we use intelligence-driven systems that adapt in real time, cut the noise, and give brands the power to scale effortlessly. Every process becomes sharper, faster, and more impactful when technology works for you instead of against you.</p>
-                    <p className="text-gray">Great design is more than visuals—it’s an experience. We create identities that speak louder than words, blending creativity with intention so your brand stands out at first glance. Every detail is crafted to connect, resonate, and leave an impression that lasts long after the screen fades.</p>
-                    <p className="text-gray">Stories don’t just entertain—they persuade, inspire, and convert. Through powerful visuals, motion, and strategy, we transform ideas into content that audiences don’t just watch, they feel. It’s about creating moments that spark connection, turning attention into trust, and trust into growth.</p>
+                    <p className="text-gray">AI and automation arenâ€™t just buzzwordsâ€”theyâ€™re the backbone of smarter businesses. At DOTS, we use intelligence-driven systems that adapt in real time, cut the noise, and give brands the power to scale effortlessly. Every process becomes sharper, faster, and more impactful when technology works for you instead of against you.</p>
+                    <p className="text-gray">Great design is more than visualsâ€”itâ€™s an experience. We create identities that speak louder than words, blending creativity with intention so your brand stands out at first glance. Every detail is crafted to connect, resonate, and leave an impression that lasts long after the screen fades.</p>
+                    <p className="text-gray">Stories donâ€™t just entertainâ€”they persuade, inspire, and convert. Through powerful visuals, motion, and strategy, we transform ideas into content that audiences donâ€™t just watch, they feel. Itâ€™s about creating moments that spark connection, turning attention into trust, and trust into growth.</p>
                     <br />
                     <h3>Why Choose DOTS?</h3>
-                    <p className="text-gray">AI and automation aren’t just the future—they’re the advantage brands need right now. At DOTS, we design systems that think ahead, adapt in real time, and take the guesswork out of growth. Smarter workflows, predictive insights, and intelligent automation mean your brand moves faster, sharper, and with purpose.</p>
+                    <p className="text-gray">AI and automation arenâ€™t just the futureâ€”theyâ€™re the advantage brands need right now. At DOTS, we design systems that think ahead, adapt in real time, and take the guesswork out of growth. Smarter workflows, predictive insights, and intelligent automation mean your brand moves faster, sharper, and with purpose.</p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -245,8 +245,8 @@ export default function AiAndAutomationPage() {
                       {/* /.pgi-caption */}
                     </div>
                     {/* End tt-image */}
-                    <p className="text-gray">That’s why choosing DOTS isn’t about hiring an agency—it’s about gaining an edge. Every strategy we build combines human creativity with machine intelligence, turning data into decisions and decisions into lasting impact. The result? Campaigns that feel authentic, run efficiently, and stay relevant long after the trend cycle shifts.</p>
-                    <p className="text-gray">Most importantly, we make AI work for you, not the other way around. With DOTS, you don’t just keep up with the digital world—you stay ahead of it. We partner with you to build systems that grow smarter over time, keeping your brand connected, agile, and impossible to overlook.</p>
+                    <p className="text-gray">Thatâ€™s why choosing DOTS isnâ€™t about hiring an agencyâ€”itâ€™s about gaining an edge. Every strategy we build combines human creativity with machine intelligence, turning data into decisions and decisions into lasting impact. The result? Campaigns that feel authentic, run efficiently, and stay relevant long after the trend cycle shifts.</p>
+                    <p className="text-gray">Most importantly, we make AI work for you, not the other way around. With DOTS, you donâ€™t just keep up with the digital worldâ€”you stay ahead of it. We partner with you to build systems that grow smarter over time, keeping your brand connected, agile, and impossible to overlook.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -278,7 +278,7 @@ export default function AiAndAutomationPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -305,7 +305,7 @@ export default function AiAndAutomationPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-4.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-4.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -332,7 +332,7 @@ export default function AiAndAutomationPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-3.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-3.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                               </div> {/* /.pgi-image-inner */}
@@ -358,7 +358,7 @@ export default function AiAndAutomationPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/ai-and-automation/ai-and-automation-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -397,7 +397,7 @@ export default function AiAndAutomationPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -428,7 +428,7 @@ export default function AiAndAutomationPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -483,4 +483,5 @@ export default function AiAndAutomationPage() {
     </>
   );
 }
+
 

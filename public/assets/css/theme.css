@@ -3000,10 +3000,14 @@ body.ttgr-cat-nav-open {
 @media (max-width: 991px) {
 	.ttgr-cat-trigger-wrap.ttgr-cat-fixed {
 		right: 12px;
-		bottom: calc(env(safe-area-inset-bottom, 0px) + 14px);
-		z-index: 1200;
+		bottom: calc(env(safe-area-inset-bottom, 0px) + 84px);
+		z-index: 9999;
+		position: fixed !important;
+		display: block !important;
+		pointer-events: auto !important;
 		opacity: 1 !important;
 		visibility: visible !important;
+		transform: none !important;
 	}
 
 	.ttgr-cat-trigger {
@@ -3847,6 +3851,17 @@ video.pgi-video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+/* Prevent iOS native controls takeover on portfolio grid cards. */
+.portfolio-grid-item video.pgi-video {
+	pointer-events: none;
+}
+
+video.pgi-video::-webkit-media-controls,
+video.pgi-video::-webkit-media-controls-start-playback-button {
+	display: none !important;
+	-webkit-appearance: none;
 }
 
 
@@ -10145,7 +10160,7 @@ body:not(.tt-boxed) .tt-footer-inner,
     scrollbar-width: none;
   }
 
-  .brand-scroller .brand-track{
+  .brand-scroller.mobile-ticker-running .brand-track{
     animation: none !important;
     transform: none !important;
     padding-right: 4vw;
@@ -10157,7 +10172,7 @@ body:not(.tt-boxed) .tt-footer-inner,
   }
 
   /* Duplicates are needed for desktop loop only; hide them on mobile for stability. */
-  .brand[aria-hidden="true"]{
+  .brand-scroller.mobile-ticker-running .brand[aria-hidden="true"]{
     display: none;
   }
 }

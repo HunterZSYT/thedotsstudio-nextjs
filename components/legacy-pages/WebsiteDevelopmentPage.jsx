@@ -1,4 +1,4 @@
-export default function WebsiteDevelopmentPage() {
+﻿export default function WebsiteDevelopmentPage() {
   return (
     <>
       <div>
@@ -210,12 +210,12 @@ export default function WebsiteDevelopmentPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">Your website is the first impression of your brand, and it should feel like your best salesperson working 24/7. At DOTS, we don’t believe in one-size-fits-all templates. We design and develop websites that are built with intention—fast, functional, and visually striking.</p>
-                    <p className="text-gray">We make sure your site works seamlessly across every device, with intuitive navigation that keeps users engaged. Beyond the design, we focus on performance, speed, and SEO-friendly architecture so your site isn’t just beautiful, but also discoverable.</p>
-                    <p className="text-gray">Whether you’re launching a corporate website, scaling an e-commerce store, or building something unique, our goal is simple: to give you a digital platform that doesn’t just exist, but actively grows your business.</p>
+                    <p className="text-gray">Your website is the first impression of your brand, and it should feel like your best salesperson working 24/7. At DOTS, we donâ€™t believe in one-size-fits-all templates. We design and develop websites that are built with intentionâ€”fast, functional, and visually striking.</p>
+                    <p className="text-gray">We make sure your site works seamlessly across every device, with intuitive navigation that keeps users engaged. Beyond the design, we focus on performance, speed, and SEO-friendly architecture so your site isnâ€™t just beautiful, but also discoverable.</p>
+                    <p className="text-gray">Whether youâ€™re launching a corporate website, scaling an e-commerce store, or building something unique, our goal is simple: to give you a digital platform that doesnâ€™t just exist, but actively grows your business.</p>
                     <br />
                     <h3>Why Choose DOTS for Web Development</h3>
-                    <p className="text-gray">At DOTS, we don’t just build websites—we build growth engines. Every project starts with understanding your business, your audience, and your goals. That way, what we create isn’t just another site on the internet, but a digital presence designed to win attention and convert it into results.</p>
+                    <p className="text-gray">At DOTS, we donâ€™t just build websitesâ€”we build growth engines. Every project starts with understanding your business, your audience, and your goals. That way, what we create isnâ€™t just another site on the internet, but a digital presence designed to win attention and convert it into results.</p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -229,7 +229,7 @@ export default function WebsiteDevelopmentPage() {
                         <div className="anim-zoomin-wrap" style={{overflow: 'hidden'}}><div className="pgi-image-inner anim-zoomin">
                             <figure className="pgi-video-wrap ttgr-height">
                               <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
-                                <source src="/assets/vids/website.webm" type="video/webm" />
+                                <source src="/assets/vids/website.mp4" type="video/mp4" />
                               </video>
                             </figure> {/* /.pgi-video-wrap */}
                           </div></div> {/* /.pgi-image-inner */}
@@ -237,7 +237,7 @@ export default function WebsiteDevelopmentPage() {
                     </div>
                     {/* End tt-image */}
                     <p className="text-gray">Our team combines creative design with cutting-edge development to deliver sites that are fast, secure, and scalable. From seamless navigation to mobile-first responsiveness, we make sure every visitor has a smooth, engaging experience. Add to that our focus on SEO and performance optimization, and your website is set up to succeed from day one.</p>
-                    <p className="text-gray">Most importantly, we treat every site as a long-term investment. We don’t hand over a static product—we deliver a platform that can grow with your business, adapt to new technologies, and keep driving results long after launch. With DOTS, you’re not just getting a website—you’re getting a partner dedicated to your digital success.</p>
+                    <p className="text-gray">Most importantly, we treat every site as a long-term investment. We donâ€™t hand over a static productâ€”we deliver a platform that can grow with your business, adapt to new technologies, and keep driving results long after launch. With DOTS, youâ€™re not just getting a websiteâ€”youâ€™re getting a partner dedicated to your digital success.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -269,7 +269,7 @@ export default function WebsiteDevelopmentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/website-development/website-development-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/website-development/website-development-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -344,7 +344,7 @@ export default function WebsiteDevelopmentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
-                                    <source src="/assets/dots-services-vids/website-development/website-development-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/website-development/website-development-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -464,7 +464,7 @@ export default function WebsiteDevelopmentPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -495,7 +495,7 @@ export default function WebsiteDevelopmentPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -550,4 +550,5 @@ export default function WebsiteDevelopmentPage() {
     </>
   );
 }
+
 

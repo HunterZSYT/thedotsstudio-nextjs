@@ -1,4 +1,4 @@
-const BRAND_LOGOS = [
+﻿const BRAND_LOGOS = [
   "/assets/dots-clients/nittoponno_online_logo.png",
   "/assets/dots-clients/RKB.png",
   "/assets/dots-clients/1st-cup-coffee.png",
@@ -196,7 +196,7 @@ export default function HomePage() {
                   <div className="ph-image">
                     <div className="ph-image-inner">
                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                        <source src="/assets/dots-assets-vids/home-video-1.webm" type="video/webm" />
+                        <source src="/assets/dots-assets-vids/home-video-1.mp4" type="video/mp4" />
                       </video>
                     </div>
                   </div>
@@ -206,7 +206,7 @@ export default function HomePage() {
       							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
       							*/}
                   <div className="ph-caption max-width-1000">
-                    <h1 className="ph-caption-title ph-appear font-normal"><em>Welcome to Dots Studio.</em><br /> We transform vision into reality through design and technology — Powering Ideas, Connecting <u>Dots.</u></h1>
+                    <h1 className="ph-caption-title ph-appear font-normal"><em>Welcome to Dots Studio.</em><br /> We transform vision into reality through design and technology â€” Powering Ideas, Connecting <u>Dots.</u></h1>
                     <div className="ph-caption-title-ghost ph-appear">Hello!</div>
                     {/* <div class="ph-caption-subtitle ph-appear">Subtitle</div> */}
                   </div> 
@@ -302,7 +302,7 @@ export default function HomePage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-image ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                        <source src="/assets/dots-assets-vids/home-video-2.webm" type="video/webm" />
+                                        <source src="/assets/dots-assets-vids/home-video-2.mp4" type="video/mp4" />
                                       </video>
                                     </figure>
                                     <div className="pgi-gradient-overlay" /> {/* /.gradient */}
@@ -337,7 +337,7 @@ export default function HomePage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-image ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                        <source src="/assets/dots-assets-vids/home-video-3.webm" type="video/webm" />
+                                        <source src="/assets/dots-assets-vids/home-video-3.mp4" type="video/mp4" />
                                       </video>
                                     </figure>
                                     {/* <div class="pgi-gradient-overlay"></div>  */}
@@ -373,7 +373,7 @@ export default function HomePage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-video-wrap ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata" poster="/assets/img/web-video-poster.png">
-                                        <source src="/assets/vids/website.webm" type="video/webm" />
+                                        <source src="/assets/vids/website.mp4" type="video/mp4" />
                                       </video>
                                     </figure>
                                     {/* <div class="pgi-gradient-overlay"></div>  */}
@@ -409,7 +409,7 @@ export default function HomePage() {
                                   <div className="pgi-image-inner anim-zoomin">
                                     <figure className="pgi-image ttgr-height">
                                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                        <source src="/assets/dots-assets-vids/home-video-4.webm" type="video/webm" />
+                                        <source src="/assets/dots-assets-vids/home-video-4.mp4" type="video/mp4" />
                                       </video>
                                     </figure>
                                     {/* <div class="pgi-gradient-overlay"></div> */}
@@ -474,7 +474,7 @@ export default function HomePage() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>High-performance sites and stores built to convert. Your website should be more than a brochure—it’s a 24/7 sales engine</p>
+                          <p>High-performance sites and stores built to convert. Your website should be more than a brochureâ€”itâ€™s a 24/7 sales engine</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/website-development" data-hover="Read More">Read More</a>
                           </div>
@@ -489,7 +489,7 @@ export default function HomePage() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Custom apps and automation that grow with you. We build robust, scalable software tailored to your workflows—so you can</p>
+                          <p>Custom apps and automation that grow with you. We build robust, scalable software tailored to your workflowsâ€”so you can</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/software-development" data-hover="Read More">Read More</a>
                           </div>
@@ -519,7 +519,7 @@ export default function HomePage() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Content strategies that connect and engage. Our work isn’t just creative—it’s built to spark meaningful action.</p>
+                          <p>Content strategies that connect and engage. Our work isnâ€™t just creativeâ€”itâ€™s built to spark meaningful action.</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/creative-content" data-hover="Read More">Read More</a>
                           </div>
@@ -528,13 +528,13 @@ export default function HomePage() {
                       <div className="tt-accordion-item anim-fadeinup">
                         <div className="tt-accordion-heading">
                           <h3 className="tt-ac-head-title">Creative Design</h3>
-                          <div className="tt-accordion-subtext">Design that doesn’t just look good—it works hard for your brand.</div>
+                          <div className="tt-accordion-subtext">Design that doesnâ€™t just look goodâ€”it works hard for your brand.</div>
                           <div className="tt-accordion-caret-wrap">
                             <div className="tt-accordion-caret magnetic-item" />
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Cohesive branding and UX that delight users. Our design work isn’t just beautiful—it’s built to guide users intuitively</p>
+                          <p>Cohesive branding and UX that delight users. Our design work isnâ€™t just beautifulâ€”itâ€™s built to guide users intuitively</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/creative-design" data-hover="Read More">Read More</a>
                           </div>
@@ -543,13 +543,13 @@ export default function HomePage() {
                       <div className="tt-accordion-item anim-fadeinup">
                         <div className="tt-accordion-heading">
                           <h3 className="tt-ac-head-title">Video Editing</h3>
-                          <div className="tt-accordion-subtext">Every frame tells a story—crafted to leave impact.</div>
+                          <div className="tt-accordion-subtext">Every frame tells a storyâ€”crafted to leave impact.</div>
                           <div className="tt-accordion-caret-wrap">
                             <div className="tt-accordion-caret magnetic-item" />
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Visual storytelling optimized for every channel. Short or long, documentary or animated—it’s all about crafting a narrat</p>
+                          <p>Visual storytelling optimized for every channel. Short or long, documentary or animatedâ€”itâ€™s all about crafting a narrat</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/video-editing" data-hover="Read More">Read More</a>
                           </div>
@@ -564,7 +564,7 @@ export default function HomePage() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Smart workflows and insights on autopilot. Cut costs, eliminate errors, and surface opportunity—our AI and RPA</p>
+                          <p>Smart workflows and insights on autopilot. Cut costs, eliminate errors, and surface opportunityâ€”our AI and RPA</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/ai-and-automation" data-hover="Read More">Read More</a>
                           </div>
@@ -605,9 +605,9 @@ export default function HomePage() {
                           <div className="swiper-slide font-alter">
                             <div className="tt-ts-item">
                               <div className="tt-ts-text">
-                                "Working with Dots Studio was a game-changer for us. Their team didn’t just deliver on time, they actually understood our brand and gave us designs that felt like us. Clients noticed the difference immediately."
+                                "Working with Dots Studio was a game-changer for us. Their team didnâ€™t just deliver on time, they actually understood our brand and gave us designs that felt like us. Clients noticed the difference immediately."
                               </div>
-                              <div className="tt-ts-subtext">— Rashed Khan, Business Owner</div>
+                              <div className="tt-ts-subtext">â€” Rashed Khan, Business Owner</div>
                             </div>
                           </div> 
                           {/* End swiper slide */}
@@ -616,9 +616,9 @@ export default function HomePage() {
                           <div className="swiper-slide font-alter">
                             <div className="tt-ts-item">
                               <div className="tt-ts-text">
-                                "I’ve worked with other agencies before, but none matched the mix of creativity and reliability that Dots Studio brought. They’re fast, responsive, and the quality speaks for itself."
+                                "Iâ€™ve worked with other agencies before, but none matched the mix of creativity and reliability that Dots Studio brought. Theyâ€™re fast, responsive, and the quality speaks for itself."
                               </div>
-                              <div className="tt-ts-subtext">— Maria Hossain, Marketing Manager</div>
+                              <div className="tt-ts-subtext">â€” Maria Hossain, Marketing Manager</div>
                             </div>
                           </div>
                           {/* End swiper slide */}
@@ -629,7 +629,7 @@ export default function HomePage() {
                               <div className="tt-ts-text">
                                 "Honestly, I was worried about costs at first, but what I got was way more valuable than the price I paid. They gave me strategy, design, and guidance that I still use every day."
                               </div>
-                              <div className="tt-ts-subtext">— Tanvir Ahmed, Startup Founder</div>
+                              <div className="tt-ts-subtext">â€” Tanvir Ahmed, Startup Founder</div>
                             </div>
                           </div>
                           {/* End swiper slide */}
@@ -638,9 +638,9 @@ export default function HomePage() {
                           <div className="swiper-slide font-alter">
                             <div className="tt-ts-item">
                               <div className="tt-ts-text">
-                                "From the very first meeting to the final delivery, the process was so smooth. Clear communication, regular updates, and zero last-minute stress. That’s rare to find these days."
+                                "From the very first meeting to the final delivery, the process was so smooth. Clear communication, regular updates, and zero last-minute stress. Thatâ€™s rare to find these days."
                               </div>
-                              <div className="tt-ts-subtext">— Anika Rahman, Brand Manager</div>
+                              <div className="tt-ts-subtext">â€” Anika Rahman, Brand Manager</div>
                             </div>
                           </div> 
                           {/* End swiper slide */}
@@ -649,9 +649,9 @@ export default function HomePage() {
                           <div className="swiper-slide font-alter">
                             <div className="tt-ts-item">
                               <div className="tt-ts-text">
-                                "We didn’t just get a website—we got an entire identity upgrade. Engagement on our socials jumped, customers loved the new look, and sales improved within weeks. Highly recommend them!"
+                                "We didnâ€™t just get a websiteâ€”we got an entire identity upgrade. Engagement on our socials jumped, customers loved the new look, and sales improved within weeks. Highly recommend them!"
                               </div>
-                              <div className="tt-ts-subtext">— Zubair Chowdhury, E-Commerce Owner</div>
+                              <div className="tt-ts-subtext">â€” Zubair Chowdhury, E-Commerce Owner</div>
                             </div>
                           </div> 
                           {/* End swiper slide */}
@@ -690,8 +690,8 @@ export default function HomePage() {
                           return (
                             <div className="brand" key={`${logoSrc}-${index}`} aria-hidden={isDuplicate ? "true" : undefined}>
                               <img
-                                loading={isDuplicate ? "lazy" : (primaryIndex < 10 ? "eager" : "lazy")}
-                                fetchPriority={isDuplicate ? "auto" : (primaryIndex < 4 ? "high" : "auto")}
+                                loading={isDuplicate ? "lazy" : "eager"}
+                                fetchPriority={isDuplicate ? "auto" : (primaryIndex < 8 ? "high" : "auto")}
                                 decoding="async"
                                 src={logoSrc}
                                 alt={brandAltFromPath(logoSrc)}
@@ -799,7 +799,7 @@ export default function HomePage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -854,4 +854,5 @@ export default function HomePage() {
     </>
   );
 }
+
 

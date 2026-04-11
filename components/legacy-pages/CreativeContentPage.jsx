@@ -1,4 +1,4 @@
-export default function CreativeContentPage() {
+﻿export default function CreativeContentPage() {
   return (
     <>
       <div>
@@ -155,7 +155,7 @@ export default function CreativeContentPage() {
                   <div className="ph-caption">
                     <h1 className="ph-caption-title ph-appear">Creative Content</h1>
                     <div className="ph-caption-title-ghost ph-appear">Creativity</div>
-                    <div className="ph-caption-subtitle ph-appear">From concept to conversion, we’ve got you covered.</div>
+                    <div className="ph-caption-subtitle ph-appear">From concept to conversion, weâ€™ve got you covered.</div>
                   </div> 
                   {/* End page header caption */}
                 </div> {/* /.page-header-inner */}
@@ -210,12 +210,12 @@ export default function CreativeContentPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">Content is more than words and visuals—it’s your brand’s voice in motion. At DOTS, we craft stories that connect, inspire, and spark action. From copy that resonates to visuals that stick, our goal is to turn your ideas into meaningful experiences.</p>
-                    <p className="text-gray">We believe every piece of content should do more than just look good. That’s why our approach blends creativity with strategy—eye-catching designs, compelling narratives, and data-driven decisions that ensure your content isn’t just seen, but remembered.</p>
-                    <p className="text-gray">Whether it’s social media campaigns, brand storytelling, or multimedia production, we create content that adapts to your audience and scales with your business. With DOTS, your content doesn’t just exist—it works, engages, and drives real impact.</p>
+                    <p className="text-gray">Content is more than words and visualsâ€”itâ€™s your brandâ€™s voice in motion. At DOTS, we craft stories that connect, inspire, and spark action. From copy that resonates to visuals that stick, our goal is to turn your ideas into meaningful experiences.</p>
+                    <p className="text-gray">We believe every piece of content should do more than just look good. Thatâ€™s why our approach blends creativity with strategyâ€”eye-catching designs, compelling narratives, and data-driven decisions that ensure your content isnâ€™t just seen, but remembered.</p>
+                    <p className="text-gray">Whether itâ€™s social media campaigns, brand storytelling, or multimedia production, we create content that adapts to your audience and scales with your business. With DOTS, your content doesnâ€™t just existâ€”it works, engages, and drives real impact.</p>
                     <br />
                     <h3>Why Choose DOTS?</h3>
-                    <p className="text-gray">At DOTS, we don’t just produce content—we craft stories that move people and brands forward. Every project starts with understanding your voice, your audience, and your goals. That’s how we make sure what we create isn’t just another post online, but meaningful content designed to spark attention, earn trust, and inspire action.</p>
+                    <p className="text-gray">At DOTS, we donâ€™t just produce contentâ€”we craft stories that move people and brands forward. Every project starts with understanding your voice, your audience, and your goals. Thatâ€™s how we make sure what we create isnâ€™t just another post online, but meaningful content designed to spark attention, earn trust, and inspire action.</p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -245,8 +245,8 @@ export default function CreativeContentPage() {
                       {/* /.pgi-caption */}
                     </div>
                     {/* End tt-image */}
-                    <p className="text-gray">Our edge comes from blending creativity with strategy. From scroll-stopping visuals to narratives that resonate, we ensure every piece connects seamlessly with your audience. Add to that our data-driven approach and optimization mindset, and your content isn’t just eye-catching—it’s engaging, discoverable, and built to scale.</p>
-                    <p className="text-gray">Most importantly, we treat content as a long-term investment, not a one-time delivery. Instead of handing over assets and moving on, we create evolving campaigns that adapt to trends, platforms, and your business growth. With DOTS, you gain more than a content provider—you gain a creative ally committed to amplifying your brand’s voice.</p>
+                    <p className="text-gray">Our edge comes from blending creativity with strategy. From scroll-stopping visuals to narratives that resonate, we ensure every piece connects seamlessly with your audience. Add to that our data-driven approach and optimization mindset, and your content isnâ€™t just eye-catchingâ€”itâ€™s engaging, discoverable, and built to scale.</p>
+                    <p className="text-gray">Most importantly, we treat content as a long-term investment, not a one-time delivery. Instead of handing over assets and moving on, we create evolving campaigns that adapt to trends, platforms, and your business growth. With DOTS, you gain more than a content providerâ€”you gain a creative ally committed to amplifying your brandâ€™s voice.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -278,7 +278,7 @@ export default function CreativeContentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/creative-content/creative-content-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/creative-content/creative-content-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -354,7 +354,7 @@ export default function CreativeContentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/creative-content/creative-content-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/creative-content/creative-content-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -393,7 +393,7 @@ export default function CreativeContentPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -424,7 +424,7 @@ export default function CreativeContentPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -479,4 +479,5 @@ export default function CreativeContentPage() {
     </>
   );
 }
+
 

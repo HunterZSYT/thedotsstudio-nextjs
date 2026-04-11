@@ -1,4 +1,4 @@
-export default function CreativeDesignPage() {
+﻿export default function CreativeDesignPage() {
   return (
     <>
       <div>
@@ -210,12 +210,12 @@ export default function CreativeDesignPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">Design is more than decoration—it’s how your brand speaks without words. At DOTS, we craft visuals that capture attention, spark emotion, and tell your story instantly. From logos to layouts, every detail is shaped with purpose to reflect the identity and values of your brand.</p>
-                    <p className="text-gray">We believe great design balances beauty with clarity. That’s why our approach blends creativity with function—eye-catching aesthetics, intuitive structures, and user-first experiences that make your brand not only stand out, but also easy to connect with.</p>
-                    <p className="text-gray">Whether it’s branding, UI/UX, or marketing creatives, our design adapts to your audience and grows with your business. With DOTS, your brand doesn’t just look good—it leaves a lasting impression, builds trust, and drives engagement across every platform.</p>
+                    <p className="text-gray">Design is more than decorationâ€”itâ€™s how your brand speaks without words. At DOTS, we craft visuals that capture attention, spark emotion, and tell your story instantly. From logos to layouts, every detail is shaped with purpose to reflect the identity and values of your brand.</p>
+                    <p className="text-gray">We believe great design balances beauty with clarity. Thatâ€™s why our approach blends creativity with functionâ€”eye-catching aesthetics, intuitive structures, and user-first experiences that make your brand not only stand out, but also easy to connect with.</p>
+                    <p className="text-gray">Whether itâ€™s branding, UI/UX, or marketing creatives, our design adapts to your audience and grows with your business. With DOTS, your brand doesnâ€™t just look goodâ€”it leaves a lasting impression, builds trust, and drives engagement across every platform.</p>
                     <br />
                     <h3>Why Choose DOTS?</h3>
-                    <p className="text-gray">At DOTS, we don’t just design visuals—we shape brand identities that last. Every project begins with understanding your story, your audience, and the emotions you want to spark. The result isn’t just a design on a screen, but a creative expression built to capture attention, build trust, and stay memorable.</p>
+                    <p className="text-gray">At DOTS, we donâ€™t just design visualsâ€”we shape brand identities that last. Every project begins with understanding your story, your audience, and the emotions you want to spark. The result isnâ€™t just a design on a screen, but a creative expression built to capture attention, build trust, and stay memorable.</p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -245,8 +245,8 @@ export default function CreativeDesignPage() {
                       {/* /.pgi-caption */}
                     </div>
                     {/* End tt-image */}
-                    <p className="text-gray">Our strength lies in blending artistry with strategy. From sleek logos to immersive interfaces, every detail is crafted with purpose. We focus on designs that aren’t just beautiful to look at but are functional, user-friendly, and adaptable across every platform—making your brand instantly recognizable wherever it appears.</p>
-                    <p className="text-gray">Most importantly, we see design as an evolving journey, not a one-time delivery. As your brand grows, our creative work scales with it—adapting to new trends, technologies, and audiences. With DOTS, you gain more than visuals—you gain a creative partner committed to shaping how the world sees your brand.</p>
+                    <p className="text-gray">Our strength lies in blending artistry with strategy. From sleek logos to immersive interfaces, every detail is crafted with purpose. We focus on designs that arenâ€™t just beautiful to look at but are functional, user-friendly, and adaptable across every platformâ€”making your brand instantly recognizable wherever it appears.</p>
+                    <p className="text-gray">Most importantly, we see design as an evolving journey, not a one-time delivery. As your brand grows, our creative work scales with itâ€”adapting to new trends, technologies, and audiences. With DOTS, you gain more than visualsâ€”you gain a creative partner committed to shaping how the world sees your brand.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -278,7 +278,7 @@ export default function CreativeDesignPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/creative-design/creative-design-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/creative-design/creative-design-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -353,7 +353,7 @@ export default function CreativeDesignPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/creative-design/creative-design-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/creative-design/creative-design-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -392,7 +392,7 @@ export default function CreativeDesignPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -423,7 +423,7 @@ export default function CreativeDesignPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -478,4 +478,5 @@ export default function CreativeDesignPage() {
     </>
   );
 }
+
 

@@ -1,4 +1,4 @@
-export default function SoftwareDevelopmentPage() {
+﻿export default function SoftwareDevelopmentPage() {
   return (
     <>
       <div>
@@ -210,12 +210,12 @@ export default function SoftwareDevelopmentPage() {
                       {/* <h3 class="tt-heading-subtitle text-gray">Subtitle</h3> */}
                     </div>
                     {/* End tt-Heading */}
-                    <p className="text-gray">Software should do more than support your business—it should scale with it. At DOTS, we build custom solutions designed to fit your workflow, not the other way around. Every system we create is robust, future-ready, and built with growth in mind.</p>
+                    <p className="text-gray">Software should do more than support your businessâ€”it should scale with it. At DOTS, we build custom solutions designed to fit your workflow, not the other way around. Every system we create is robust, future-ready, and built with growth in mind.</p>
                     <p className="text-gray">We help you build meaningful connections with your audience through search visibility, social engagement, and campaigns designed to convert. Every move we make is backed by data, but every message is crafted with personality and purpose.</p>
-                    <p className="text-gray">From SEO and ads to content and social campaigns, our focus is long-term growth. We don’t chase trends—we build strategies that keep your brand relevant and impossible to ignore.</p>
+                    <p className="text-gray">From SEO and ads to content and social campaigns, our focus is long-term growth. We donâ€™t chase trendsâ€”we build strategies that keep your brand relevant and impossible to ignore.</p>
                     <br />
                     <h3>Why Choose DOTS for Software Development?</h3>
-                    <p className="text-gray">At DOTS, we don’t just write code—we solve problems. Every piece of software we create starts with understanding your workflow and your goals, so the final product feels natural to use and perfectly aligned with how your business operates. That way, you’re not adapting to the software—the software adapts to you. </p>
+                    <p className="text-gray">At DOTS, we donâ€™t just write codeâ€”we solve problems. Every piece of software we create starts with understanding your workflow and your goals, so the final product feels natural to use and perfectly aligned with how your business operates. That way, youâ€™re not adapting to the softwareâ€”the software adapts to you. </p>
                     {/* Begin tt-image
       									====================
       									* Use class "tti-fixed-height" to enable image fixed height (no effect on small screens!).
@@ -231,8 +231,8 @@ export default function SoftwareDevelopmentPage() {
                       </figure>
                     </div> 
                     {/* End tt-image */}
-                    <p className="text-gray">Our approach balances reliability with scalability. We build systems that are robust enough to handle today’s challenges but flexible enough to grow with your business tomorrow. From automation tools that save time to enterprise applications that connect teams, every solution is designed to be secure, efficient, and future-ready.</p>
-                    <p className="text-gray">Most importantly, we act as a partner—not just a vendor. Our team stays involved to make sure your software keeps delivering value as your business evolves. With DOTS, you don’t just get a product—you get a long-term solution that gives you control, efficiency, and the freedom to scale without limits.</p>
+                    <p className="text-gray">Our approach balances reliability with scalability. We build systems that are robust enough to handle todayâ€™s challenges but flexible enough to grow with your business tomorrow. From automation tools that save time to enterprise applications that connect teams, every solution is designed to be secure, efficient, and future-ready.</p>
+                    <p className="text-gray">Most importantly, we act as a partnerâ€”not just a vendor. Our team stays involved to make sure your software keeps delivering value as your business evolves. With DOTS, you donâ€™t just get a productâ€”you get a long-term solution that gives you control, efficiency, and the freedom to scale without limits.</p>
                   </div> {/* /.tt-section-inner */}
                 </div>
                 <div id="portfolio-grid" className="pgi-cap-inside pgi-hover">
@@ -264,7 +264,7 @@ export default function SoftwareDevelopmentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-image ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/software-development/software-development-vid-1.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/software-development/software-development-vid-1.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 <div className="pgi-gradient-overlay" /> {/* /.pgi-image */}
@@ -340,7 +340,7 @@ export default function SoftwareDevelopmentPage() {
                               <div className="pgi-image-inner anim-zoomin">
                                 <figure className="pgi-video-wrap ttgr-height">
                                   <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                                    <source src="/assets/dots-services-vids/software-development/software-development-vid-2.webm" type="video/webm" />
+                                    <source src="/assets/dots-services-vids/software-development/software-development-vid-2.mp4" type="video/mp4" />
                                   </video>
                                 </figure>
                                 {/* /.pgi-image */}
@@ -461,7 +461,7 @@ export default function SoftwareDevelopmentPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -492,7 +492,7 @@ export default function SoftwareDevelopmentPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -547,4 +547,5 @@ export default function SoftwareDevelopmentPage() {
     </>
   );
 }
+
 

@@ -1,4 +1,4 @@
-export default function LandingPage1Page() {
+﻿export default function LandingPage1Page() {
   return (
     <>
       <div>
@@ -151,7 +151,7 @@ export default function LandingPage1Page() {
       							Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
       							*/}
                   <div className="ph-caption max-width-1000">
-                    <h1 className="ph-caption-title ph-appear font-normal"><em>Welcome to Dots.</em><br /> We transform vision into reality through design and technology — Powering Ideas, Connecting <u>Dots.</u></h1>
+                    <h1 className="ph-caption-title ph-appear font-normal"><em>Welcome to Dots.</em><br /> We transform vision into reality through design and technology â€” Powering Ideas, Connecting <u>Dots.</u></h1>
                     <div className="ph-caption-title-ghost ph-appear">Hello!</div>
                     {/* <div class="ph-caption-subtitle ph-appear">Subtitle</div> */}
                   </div> 
@@ -313,8 +313,8 @@ export default function LandingPage1Page() {
                                     <div className="pgi-image-inner anim-zoomin">
                                       <figure className="pgi-video-wrap ttgr-height">
                                         <video playsInline className="pgi-video" loop muted preload="none" poster="/assets/vids/fashion-week.jpg">
-                                          <source src="/assets/vids/website.webm" type="video/webm" />
-                                          <source src="/assets/vids/website.webm" type="video/webm" />
+                                          <source src="/assets/vids/website.mp4" type="video/mp4" />
+                                          <source src="/assets/vids/website.mp4" type="video/mp4" />
                                         </video>
                                       </figure> {/* /.pgi-video-wrap */}
                                     </div> {/* /.pgi-image-inner */}
@@ -411,7 +411,7 @@ export default function LandingPage1Page() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>High-performance sites and stores built to convert. Your website should be more than a brochure—it’s a 24/7 sales engine</p>
+                          <p>High-performance sites and stores built to convert. Your website should be more than a brochureâ€”itâ€™s a 24/7 sales engine</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/services-website-development" data-hover="Read More">Read More</a>
                           </div>
@@ -426,7 +426,7 @@ export default function LandingPage1Page() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Custom apps and automation that grow with you. We build robust, scalable software tailored to your workflows—so you can</p>
+                          <p>Custom apps and automation that grow with you. We build robust, scalable software tailored to your workflowsâ€”so you can</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/services-software-development" data-hover="Read More">Read More</a>
                           </div>
@@ -456,7 +456,7 @@ export default function LandingPage1Page() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Cohesive branding and UX that delight users. Our design work isn’t just beautiful—it’s built to guide users intuitively</p>
+                          <p>Cohesive branding and UX that delight users. Our design work isnâ€™t just beautifulâ€”itâ€™s built to guide users intuitively</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/dummy-page" data-hover="Read More">Read More</a>
                           </div>
@@ -465,13 +465,13 @@ export default function LandingPage1Page() {
                       <div className="tt-accordion-item anim-fadeinup">
                         <div className="tt-accordion-heading">
                           <h3 className="tt-ac-head-title">Creative Design</h3>
-                          <div className="tt-accordion-subtext">Design that doesn’t just look good—it works hard for your brand.</div>
+                          <div className="tt-accordion-subtext">Design that doesnâ€™t just look goodâ€”it works hard for your brand.</div>
                           <div className="tt-accordion-caret-wrap">
                             <div className="tt-accordion-caret magnetic-item" />
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Cohesive branding and UX that delight users. Our design work isn’t just beautiful—it’s built to guide users intuitively</p>
+                          <p>Cohesive branding and UX that delight users. Our design work isnâ€™t just beautifulâ€”itâ€™s built to guide users intuitively</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/dummy-page" data-hover="Read More">Read More</a>
                           </div>
@@ -480,13 +480,13 @@ export default function LandingPage1Page() {
                       <div className="tt-accordion-item anim-fadeinup">
                         <div className="tt-accordion-heading">
                           <h3 className="tt-ac-head-title">Video Editing</h3>
-                          <div className="tt-accordion-subtext">Every frame tells a story—crafted to leave impact.</div>
+                          <div className="tt-accordion-subtext">Every frame tells a storyâ€”crafted to leave impact.</div>
                           <div className="tt-accordion-caret-wrap">
                             <div className="tt-accordion-caret magnetic-item" />
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Visual storytelling optimized for every channel. Short or long, documentary or animated—it’s all about crafting a narrat</p>
+                          <p>Visual storytelling optimized for every channel. Short or long, documentary or animatedâ€”itâ€™s all about crafting a narrat</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/dummy-page" data-hover="Read More">Read More</a>
                           </div>
@@ -501,7 +501,7 @@ export default function LandingPage1Page() {
                           </div>
                         </div> {/* /.tt-accordion-heading */}
                         <div className="tt-accordion-content max-width-800">
-                          <p>Smart workflows and insights on autopilot. Cut costs, eliminate errors, and surface opportunity—our AI and RPA</p>
+                          <p>Smart workflows and insights on autopilot. Cut costs, eliminate errors, and surface opportunityâ€”our AI and RPA</p>
                           <div className="tt-btn tt-btn-link">
                             <a href="/dummy-page" data-hover="Read More">Read More</a>
                           </div>
@@ -738,7 +738,7 @@ export default function LandingPage1Page() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.thedotslimited.com/" target="_blank" rel="noopener" className="tt-link">Dots Limited</a>
+                        Â© Copyright - <a href="https://www.thedotslimited.com/" target="_blank" rel="noopener" className="tt-link">Dots Limited</a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -793,3 +793,4 @@ export default function LandingPage1Page() {
     </>
   );
 }
+

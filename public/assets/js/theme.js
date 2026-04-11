@@ -770,6 +770,7 @@
 			var scroller = this;
 			if (!scroller || scroller.dataset.mobileTickerInit === "1") return;
 			scroller.dataset.mobileTickerInit = "1";
+			scroller.classList.add("mobile-ticker-running");
 
 			var rafId = null;
 			var lastTs = 0;
@@ -795,9 +796,11 @@
 				lastTs = ts;
 
 				if (!paused) {
-					var maxScrollLeft = scroller.scrollWidth - scroller.clientWidth;
+					var track = scroller.querySelector(".brand-track");
+					var totalWidth = track ? track.scrollWidth : scroller.scrollWidth;
+					var maxScrollLeft = totalWidth - scroller.clientWidth;
 					if (maxScrollLeft > 0) {
-						scroller.scrollLeft += delta * 0.045; // px per ms (kept subtle)
+						scroller.scrollLeft += delta * 0.095; // px per ms
 						if (scroller.scrollLeft >= maxScrollLeft - 1) {
 							scroller.scrollLeft = 0;
 						}

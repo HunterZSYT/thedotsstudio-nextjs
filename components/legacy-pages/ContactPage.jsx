@@ -1,4 +1,4 @@
-export default function ContactPage() {
+﻿export default function ContactPage() {
   return (
     <>
       <div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   <div className="ph-image">
                     <div className="ph-image-inner">
                       <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                        <source src="/assets/dots-assets-vids/contact-vid.webm" type="video/webm" />
+                        <source src="/assets/dots-assets-vids/contact-vid.mp4" type="video/mp4" />
                       </video>
                     </div>
                   </div>
@@ -324,7 +324,7 @@ export default function ContactPage() {
                       {/* Use if destination page contains page header image */}
                       <div className="tt-pn-image">
                         <video playsInline data-autoplay="true" autoPlay className="pgi-video" loop muted preload="metadata">
-                          <source src="/assets/dots-assets-vids/portfolio-vid.webm" type="video/webm" />
+                          <source src="/assets/dots-assets-vids/portfolio-vid.mp4" type="video/mp4" />
                         </video>
                       </div>
                     </div>
@@ -355,7 +355,7 @@ export default function ContactPage() {
                   <div className="footer-col tt-align-center order-m-last">
                     <div className="footer-col-inner">
                       <div className="tt-copyright">
-                        © Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
+                        Â© Copyright - <a href="https://www.facebook.com/dotslimited" target="_blank" rel="noopener" className="tt-link">Dots It and Software Limited </a>
                       </div>
                     </div> {/* /.footer-col-inner */}
                   </div>
@@ -410,4 +410,5 @@ export default function ContactPage() {
     </>
   );
 }
+
 
