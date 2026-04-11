@@ -762,10 +762,9 @@
 	// ==================================================
 	// Mobile brand scroller autoplay (drag + hold friendly)
 	// ==================================================
-	(function initMobileBrandScrollerAutoplay() {
+	function initMobileBrandScrollerAutoplay() {
 		var isSmallScreen = window.matchMedia("(max-width: 991px)").matches;
-		var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-		if (!isSmallScreen || reduceMotion) return;
+		if (!isSmallScreen) return;
 
 		$(".brand-scroller").each(function() {
 			var scroller = this;
@@ -808,11 +807,24 @@
 				rafId = window.requestAnimationFrame(tick);
 			}
 
-			scroller.addEventListener("pointerdown", function() { setPaused(true); }, { passive: true });
-			scroller.addEventListener("pointerup", function() { setPaused(true, 900); }, { passive: true });
-			scroller.addEventListener("pointercancel", function() { setPaused(true, 900); }, { passive: true });
-			scroller.addEventListener("touchstart", function() { setPaused(true); }, { passive: true });
-			scroller.addEventListener("touchend", function() { setPaused(true, 900); }, { passive: true });
+			scroller.addEventListener("pointerdown", function() { setPaused(true); scroller.classList.add("is-dragging"); }, { passive: true });
+			scroller.addEventListener("pointerup", function() {
+				setPaused(true, 900);
+				setTimeout(function() { scroller.classList.remove("is-dragging"); }, 250);
+			}, { passive: true });
+			scroller.addEventListener("pointercancel", function() {
+				setPaused(true, 900);
+				setTimeout(function() { scroller.classList.remove("is-dragging"); }, 250);
+			}, { passive: true });
+			scroller.addEventListener("touchstart", function() { setPaused(true); scroller.classList.add("is-dragging"); }, { passive: true });
+			scroller.addEventListener("touchend", function() {
+				setPaused(true, 900);
+				setTimeout(function() { scroller.classList.remove("is-dragging"); }, 250);
+			}, { passive: true });
+			scroller.addEventListener("touchcancel", function() {
+				setPaused(true, 900);
+				setTimeout(function() { scroller.classList.remove("is-dragging"); }, 250);
+			}, { passive: true });
 
 			document.addEventListener("visibilitychange", function() {
 				if (document.hidden) {
@@ -831,7 +843,9 @@
 				}
 			}, { once: true });
 		});
-	})();
+	}
+	initMobileBrandScrollerAutoplay();
+	$(window).on("load", initMobileBrandScrollerAutoplay);
 
 
 
@@ -1582,7 +1596,28 @@
 	var usePortfolioLiteMode = isMobile && isPortfolioPage;
 	if (usePortfolioLiteMode) {
 		$("body").addClass("portfolio-lite-mode");
-		$(".ttgr-cat-trigger-wrap, .ttgr-cat-nav").remove();
+
+		// Lightweight mobile filtering (without Isotope) to avoid iOS reload/crash risk.
+		$(".ttgr-cat-list > li > a, .ttgr-cat-classic-list > li > a").on("click", function(e) {
+			e.preventDefault();
+			var selector = $(this).attr("data-filter");
+			var showAll = !selector || selector === "*" || selector === "all";
+			var $items = $container.find(".isotope-item");
+
+			$(".ttgr-cat-list > li > a, .ttgr-cat-classic-list > li > a").removeClass("active");
+			$(this).addClass("active");
+
+			if (showAll) {
+				$items.show();
+			} else {
+				$items.hide();
+				$items.filter(selector).show();
+			}
+
+			setTimeout(function() {
+				ScrollTrigger.refresh(true);
+			}, 60);
+		});
 	} else {
 		$container.imagesLoaded(function() {
 			$container.isotope({

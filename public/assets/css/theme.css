@@ -10122,7 +10122,7 @@ body:not(.tt-boxed) .tt-footer-inner,
     overscroll-behavior-x: contain;
     -webkit-mask-image: none;
             mask-image: none;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: none;
     scroll-behavior: smooth;
     touch-action: pan-x;
     cursor: grab;
@@ -10131,6 +10131,10 @@ body:not(.tt-boxed) .tt-footer-inner,
 
   .brand-scroller:active{
     cursor: grabbing;
+  }
+
+  .brand-scroller.is-dragging{
+    scroll-snap-type: x proximity;
   }
 
   .brand-scroller::-webkit-scrollbar{
